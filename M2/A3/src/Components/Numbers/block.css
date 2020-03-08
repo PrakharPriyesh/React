@@ -1,0 +1,5 @@
+.button:active {
+    background-color: #b7bbb7;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
