@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Navbar from './component/navbar/navbar'
-import Presenter from './component/presenter/presenter'
-import util_products from './utils/utils'
+import Navbar from './component/navbar';
+import Presenter from './component/presenter';
+import util_products from './utils/utils';
 
 class Home extends Component {
     constructor(props) {

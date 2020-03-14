@@ -1,20 +1,20 @@
 import React from 'react';
 import './presenter.css';
-import Products from '../products/products'
-import CartView from '../cart-view/cartView'
+import Products from '../products';
+import CartView from '../cart-view';
 
 function presenter(props) {
-    let products = props.products
-    let search_text = props.search
+    let products = props.products;
+    let search_text = props.search;
 
     const filtered_products = (
         Object.keys(products).map(function (key) {
             if (products[key].name.toLowerCase().indexOf(search_text) !== -1) {
-                let data = {}
-                data[key] = products[key]
-                return data
+                let data = {};
+                data[key] = products[key];
+                return data;
             }
-            return null
+            return null;
         })
     )
 
