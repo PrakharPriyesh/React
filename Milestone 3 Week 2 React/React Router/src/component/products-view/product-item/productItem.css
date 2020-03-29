@@ -1,0 +1,52 @@
+.product-card {
+    min-width: 190px;
+    max-width: 190px;
+    box-shadow: -2px 9px 10px -5px rgba(0,0,0,0.25);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.product-body {
+    padding: 10px;
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 320px;
+    min-height: 320px;
+}
+
+.product-img {
+    max-width: auto;
+    max-height: 180px;
+    padding: 10px;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.product-text font {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* .product-stock {
+    font-size: 10px;
+} */
+
+.product-button {
+    border: none;
+    color: white;
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 6px;
+    min-height: 28px;
+    font-size: small;
+    min-width: 85px;
+    margin-top: 5px;
+}
