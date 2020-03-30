@@ -1,6 +1,5 @@
 import React from 'react';
 import './navbar.css'
-//import {Redirect} from 'react-router-dom'
 
 const Navbar = ({ search, updateSearch }) => {
     return (
