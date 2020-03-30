@@ -10,6 +10,14 @@
     color: black;
 }
 
+.seller-icon {
+    position: absolute;
+    height: 140px;
+    left: 20px;
+    top: 25px;
+
+}
+
 .seller-name {
     position: absolute;
     left: 200px;

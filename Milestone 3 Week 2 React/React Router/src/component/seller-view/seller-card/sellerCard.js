@@ -2,10 +2,12 @@ import React from 'react';
 import './sellerCard.css';
 import { Link } from 'react-router-dom';
 
-const SellerCard = ({ id, name, contact, address }) => {
+const SellerCard = ({ id, name, contact, address, icon }) => {
     return (
         <Link to={"sellers/" + id}>
             <div className="seller-card">
+                <img className="seller-icon" src={icon}></img>
+
                 <div className="seller-name">
                     {name}
                 </div>
