@@ -1,15 +1,15 @@
 import React from 'react';
-import CartItem from './cartItem/cartItem'
+import { CartItem } from './'
 import './cartView.css'
 
-function cartView({totalCarValue,cartProducts,removeItemFromCart}) {
+const CartView = ({ totalCarValue, cartProducts, removeItemFromCart }) => {
     return (
         <>
             <div className="cart-bar">
                 <font className="cart-name">Black Bag</font>
                 <font className="cart-value">&#8377; {totalCarValue}</font>
             </div>
-            <hr/>
+            <hr />
             <CartItem
                 cartProducts={cartProducts}
                 removeItemFromCart={removeItemFromCart}
@@ -18,4 +18,4 @@ function cartView({totalCarValue,cartProducts,removeItemFromCart}) {
     );
 }
 
-export default cartView;
+export default CartView;
