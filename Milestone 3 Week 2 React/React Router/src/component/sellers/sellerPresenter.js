@@ -1,7 +1,7 @@
 import React from 'react';
 import { CartView } from '../cart-view';
 import { SellerList } from '.';
-import { ProductsView } from '../products-view';
+import Products from '../products';
 import Navbar from '../navbar';
 import './sellerPresenter.css';
 
@@ -15,7 +15,7 @@ const SellerPresenter = ({search, updateSearch, products, addItemToCartHandler, 
             <div className="grid-container">
                 <div className="grid-item item1">
                     <SellerList />
-                    <ProductsView
+                    <Products
                         products={products}
                         addItemToCartHandler={addItemToCartHandler}
                         search={search}

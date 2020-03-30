@@ -1,7 +1,7 @@
 import React from 'react';
-import ProductItem from './product-item/productItem'
+import { ProductItem } from './'
 
-const ProductsView = ({ products, addItemToCartHandler, search }) => {
+const Products = ({ products, addItemToCartHandler, search }) => {
     let href = window.location.href.split("/")
     let sellerId = href[href.length - 1]
     if (window.location.href === ('http://localhost:3000/sellers/' + sellerId)) {
@@ -22,13 +22,13 @@ const ProductsView = ({ products, addItemToCartHandler, search }) => {
             Object.keys(products).map((keys) => {
                 const element = products[keys]
                 return (
-                <ProductItem
-                    key={keys}
-                    uniqueKey={keys}
-                    element={element}
-                    sellerId={sellerId}
-                    addItemToCartHandler={addItemToCartHandler}
-                />
+                    <ProductItem
+                        key={keys}
+                        uniqueKey={keys}
+                        element={element}
+                        sellerId={sellerId}
+                        addItemToCartHandler={addItemToCartHandler}
+                    />
                 )
             })
         )
@@ -47,4 +47,4 @@ const ProductsView = ({ products, addItemToCartHandler, search }) => {
 
 }
 
-export default ProductsView;
+export default Products;
