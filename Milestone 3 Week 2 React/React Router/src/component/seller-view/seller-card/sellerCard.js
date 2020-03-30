@@ -6,7 +6,7 @@ const SellerCard = ({ id, name, contact, address, icon, rating }) => {
     return (
         <Link to={"sellers/" + id}>
             <div className="seller-card">
-                <img className="seller-icon" src={icon}></img>
+                <img className="seller-icon" src={icon} alt={icon} onError={(e) => { e.target.onerror = null; e.target.src = "https://images.vexels.com/media/users/3/148920/isolated/preview/a8016baffbce8083fcc0313f2c904e6e-red-office-chair-clipart-by-vexels.png" }}></img>
 
                 <div className="seller-name">
                     {name}
