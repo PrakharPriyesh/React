@@ -3,7 +3,7 @@ import { CartView } from '../cart-view';
 import { SellerList } from './';
 import { ProductsView } from '../products-view';
 import Navbar from '../navbar';
-import './sellerView.css';
+import './sellerPresenter.css';
 
 const SellerPresenter = ({search, updateSearch, products, addItemToCartHandler, totalCartValue, cartProducts, removeItemFromCart}) => {
     return (
