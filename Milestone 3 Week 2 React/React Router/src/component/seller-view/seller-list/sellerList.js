@@ -1,6 +1,6 @@
 import React from 'react';
-import SellerCard from '../seller-card/sellerCard'
-import {sellerDetails} from '../../../utils'
+import { SellerCard } from '../'
+import { sellerDetails } from '../../../utils'
 
 const SellerList = () => {
 
@@ -13,6 +13,7 @@ const SellerList = () => {
                     name={sellerDetails[key].name}
                     contact={sellerDetails[key].contact}
                     address={sellerDetails[key].address}
+                    icon={sellerDetails[key].icon}
                 />
             })
         )
