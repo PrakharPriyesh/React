@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import About from './component/about';
-import SellerContainer from './component/seller-view/'
+import SellerContainer from './component/sellers/'
 
 const App = () => {
   return (

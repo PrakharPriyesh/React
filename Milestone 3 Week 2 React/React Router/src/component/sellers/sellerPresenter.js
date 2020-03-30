@@ -1,6 +1,6 @@
 import React from 'react';
 import { CartView } from '../cart-view';
-import { SellerList } from './';
+import { SellerList } from '.';
 import { ProductsView } from '../products-view';
 import Navbar from '../navbar';
 import './sellerPresenter.css';
