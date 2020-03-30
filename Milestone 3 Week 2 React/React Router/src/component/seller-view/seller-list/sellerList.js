@@ -12,6 +12,7 @@ const SellerList = () => {
                     id={key}
                     name={sellerDetails[key].name}
                     contact={sellerDetails[key].contact}
+                    address={sellerDetails[key].address}
                 />
             })
         )
