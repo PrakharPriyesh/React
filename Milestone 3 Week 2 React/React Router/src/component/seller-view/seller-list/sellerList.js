@@ -14,6 +14,7 @@ const SellerList = () => {
                     contact={sellerDetails[key].contact}
                     address={sellerDetails[key].address}
                     icon={sellerDetails[key].icon}
+                    rating={sellerDetails[key].rating}
                 />
             })
         )

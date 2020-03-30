@@ -2,7 +2,7 @@ import React from 'react';
 import './sellerCard.css';
 import { Link } from 'react-router-dom';
 
-const SellerCard = ({ id, name, contact, address, icon }) => {
+const SellerCard = ({ id, name, contact, address, icon, rating }) => {
     return (
         <Link to={"sellers/" + id}>
             <div className="seller-card">
@@ -12,8 +12,8 @@ const SellerCard = ({ id, name, contact, address, icon }) => {
                     {name}
                 </div>
 
-                <div className="seller-id">
-                    {id}
+                <div className="seller-rating">
+                    Rating: {rating} stars
                 </div>
 
                 <div className="seller-description">
