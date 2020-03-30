@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import About from './component/about';
-import SellerView from './component/seller-view/sellerView'
+import SellerContainer from './component/seller-view/'
 
 const App = () => {
   return (
@@ -13,10 +13,10 @@ const App = () => {
             <About />
           </Route>
           <Route exact path="/sellers/:id">
-            <SellerView />
+            <SellerContainer />
           </Route>
           <Route path="/sellers">
-            <SellerView />
+            <SellerContainer />
           </Route>
         </Switch>
       </Router>

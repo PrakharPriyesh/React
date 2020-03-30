@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import Navbar from '../navbar';
-import { CartView } from '../cart-view';
-import { SellerList } from './';
-import { ProductsView } from '../products-view';
+import { SellerPresenter } from '.';
 import { productList } from '../../utils';
-import './sellerView.css';
 
-class SellerView extends Component {
+class SellerContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -119,30 +115,18 @@ class SellerView extends Component {
         let { search, products, totalCartValue, cartProducts } = this.state
         return (
             <>
-                <Navbar
+                <SellerPresenter
                     search={search}
                     updateSearch={this.updateSearch}
+                    products={products}
+                    addItemToCartHandler={this.addItemToCartHandler}
+                    totalCartValue={totalCartValue}
+                    cartProducts={cartProducts}
+                    removeItemFromCart={this.removeItemFromCart}
                 />
-                <div className="grid-container">
-                    <div className="grid-item item1">
-                        <SellerList />
-                        <ProductsView
-                            products={products}
-                            addItemToCartHandler={this.addItemToCartHandler}
-                            search={search}
-                        />
-                    </div>
-                    <div className="grid-item item2">
-                        <CartView
-                            totalCartValue={totalCartValue}
-                            cartProducts={cartProducts}
-                            removeItemFromCart={this.removeItemFromCart}
-                        />
-                    </div>
-                </div>
             </>
         );
     }
 }
 
-export default SellerView;
+export default SellerContainer;
