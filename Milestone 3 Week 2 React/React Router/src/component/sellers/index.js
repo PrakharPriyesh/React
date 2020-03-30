@@ -1,7 +1,7 @@
 import SellerContainer from './sellerContainer'
 import SellerCard from './seller-card/sellerCard'
 import SellerList from './seller-list/sellerList'
-import SellerPresenter from './sellerPresenter'
+import Seller from './seller'
 
 export default SellerContainer
-export {SellerCard, SellerList, SellerPresenter}
+export { SellerCard, SellerList, Seller }

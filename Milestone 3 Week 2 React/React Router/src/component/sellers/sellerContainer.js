@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SellerPresenter } from '.';
+import { Seller } from './';
 import { productList } from '../../utils';
 
 class SellerContainer extends Component {
@@ -115,7 +115,7 @@ class SellerContainer extends Component {
         let { search, products, totalCartValue, cartProducts } = this.state
         return (
             <>
-                <SellerPresenter
+                <Seller
                     search={search}
                     updateSearch={this.updateSearch}
                     products={products}
