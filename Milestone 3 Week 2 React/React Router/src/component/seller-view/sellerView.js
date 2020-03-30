@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from '../navbar';
 import { CartView } from '../cart-view';
-import SellerList from './seller-list/sellerList';
+import { SellerList } from './';
 import { ProductsView } from '../products-view';
-import {productList} from '../../utils';
+import { productList } from '../../utils';
 import './sellerView.css';
 
 class SellerView extends Component {
@@ -14,7 +14,6 @@ class SellerView extends Component {
             products: productList,
             totalCartValue: 0,
             search: '',
-            isSellerListVisible: true,
         }
     }
 
