@@ -54,7 +54,6 @@ class SellerView extends Component {
         if (option === "add") {
             let { products, cartProducts } = this.state;
             let sproducts = products
-            //console.log(sproducts,"sssp")
             products = Object.assign({}, ...sproducts[sellerId])
             let itemToAdd = { ...products[id] }
             itemToAdd.stock = itemToAdd.stock - 1
