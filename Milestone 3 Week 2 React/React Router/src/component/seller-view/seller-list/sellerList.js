@@ -1,6 +1,6 @@
 import React from 'react';
 import SellerCard from '../seller-card/sellerCard'
-import sellerDetails from '../../../utils/sellerDetails'
+import {sellerDetails} from '../../../utils'
 
 const SellerList = () => {
 
