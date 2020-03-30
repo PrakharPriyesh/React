@@ -3,7 +3,7 @@ import Navbar from '../navbar';
 import { CartView } from '../cart-view';
 import SellerList from './seller-list/sellerList';
 import { ProductsView } from '../products-view';
-import productList from '../../utils/productList';
+import {productList} from '../../utils';
 import './sellerView.css';
 
 class SellerView extends Component {

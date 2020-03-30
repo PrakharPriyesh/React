@@ -1,4 +1,4 @@
-const product_list = {
+const productList = {
     "s1": [
         { "x1": { name: "Wing Chair", price: 100, img: "https://www.ikea.com/in/en/images/products/strandmon-wing-chair__0690287_PE723209_S5.JPG", stock: 2, count: 0 } },
         { "x2": { name: "Mobile", price: 200, img: "https://images-na.ssl-images-amazon.com/images/I/51s0Mb5li8L._SL1000_.jpg", stock: 1, count: 0 } },
@@ -21,7 +21,7 @@ const product_list = {
         { "x15": { name: "Wing Chair", price: 100, img: "https://www.ikea.com/in/en/images/products/strandmon-wing-chair__0690287_PE723209_S5.JPG", stock: 2, count: 0 } },
     ]
 }
-export default product_list;
+export default productList;
 
 
 // const product_list = {

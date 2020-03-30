@@ -1,3 +1,4 @@
-import seller_details from './sellerDetails';
+import sellerDetails from './sellerDetails';
+import productList from './productList';
 
-export default seller_details
+export {sellerDetails, productList}
