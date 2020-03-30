@@ -1,8 +1,8 @@
 import React from 'react';
-import { CartItem } from './'
-import './cartView.css'
+import { CartItem } from '.'
+import './cart.css'
 
-const CartView = ({ totalCarValue, cartProducts, removeItemFromCart }) => {
+const Cart = ({ totalCarValue, cartProducts, removeItemFromCart }) => {
     return (
         <>
             <div className="cart-bar">
@@ -18,4 +18,4 @@ const CartView = ({ totalCarValue, cartProducts, removeItemFromCart }) => {
     );
 }
 
-export default CartView;
+export default Cart;

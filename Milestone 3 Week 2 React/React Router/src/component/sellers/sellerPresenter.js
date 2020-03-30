@@ -1,11 +1,11 @@
 import React from 'react';
-import { CartView } from '../cart-view';
-import { SellerList } from '.';
+import Cart from '../cart';
 import Products from '../products';
 import Navbar from '../navbar';
+import { SellerList } from './';
 import './sellerPresenter.css';
 
-const SellerPresenter = ({search, updateSearch, products, addItemToCartHandler, totalCartValue, cartProducts, removeItemFromCart}) => {
+const SellerPresenter = ({ search, updateSearch, products, addItemToCartHandler, totalCartValue, cartProducts, removeItemFromCart }) => {
     return (
         <>
             <Navbar
@@ -22,7 +22,7 @@ const SellerPresenter = ({search, updateSearch, products, addItemToCartHandler, 
                     />
                 </div>
                 <div className="grid-item item2">
-                    <CartView
+                    <Cart
                         totalCartValue={totalCartValue}
                         cartProducts={cartProducts}
                         removeItemFromCart={removeItemFromCart}
