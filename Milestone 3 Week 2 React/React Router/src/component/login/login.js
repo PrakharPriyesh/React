@@ -35,7 +35,6 @@ class Login extends Component {
         const { username, password, loggedIn } = this.state
         const sessionUser = sessionStorage.getItem("id")
         const sessionPassword = sessionStorage.getItem("pass")
-
         if (sessionUser != null || sessionPassword != null) {
             return <Redirect to="/sellers" />
         }
@@ -49,7 +48,7 @@ class Login extends Component {
                 <div className="login-heading">
                     Login Here
                 </div>
-                <br/>
+                <br />
                 <form onSubmit={this.submitHandler}>
                     <input type="text" placeholder="username" name="username" onChange={this.onChange} value={username} />
                     <br /><br />
@@ -57,7 +56,6 @@ class Login extends Component {
                     <br /><br />
                     <input type="submit" />
                 </form>
-
             </div>
         );
     }
