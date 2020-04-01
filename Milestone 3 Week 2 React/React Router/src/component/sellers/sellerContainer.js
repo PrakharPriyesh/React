@@ -115,11 +115,11 @@ class SellerContainer extends Component {
     render() {
         const sessionUser = sessionStorage.getItem("id")
         const sessionPassword = sessionStorage.getItem("pass")
-        
-        if (sessionUser==null || !sessionPassword==null) {
-           return <Redirect to="/login" />
+
+        if (sessionUser == null || sessionPassword == null) {
+            return <Redirect to="/login" />
         }
-        
+
         let { search, products, totalCartValue, cartProducts } = this.state
         return (
             <>
