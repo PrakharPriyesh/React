@@ -44,3 +44,26 @@
     padding: 5px;
     border: 1px solid #ccc;
 }
+
+.navbar-logout-button {
+    float: right;
+    border: 0px;
+    background: none;
+    color: white;
+    margin-right: 10px;
+    height: 35px;
+    margin-top: 7px;
+    line-height: 35px;
+    vertical-align: center;
+}
+
+.navbar-logout-button:hover {
+    float: right;
+    border-radius: 3px;
+    background: whitesmoke;
+    color: black;
+    height: 35px;
+    margin-top: 8px;
+    line-height: 35px;
+    vertical-align: center;
+}

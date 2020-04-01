@@ -10,8 +10,11 @@ const Navbar = ({ search, updateSearch }) => {
                 <a href="#news">News</a>
                 <a href="#contact">Contact</a>
                 <a href="http://localhost:3000/about">About</a>
+                
             </div>
+            <button className="navbar-logout-button" >Logout</button>
             <input type="text" placeholder="Search" value={search} onChange={updateSearch} ></input>
+            
         </div>
     );
 }
