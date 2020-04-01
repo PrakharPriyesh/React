@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import About from './component/about';
 import SellerContainer from './component/sellers/'
+import Login from './component/login/login';
 
 const App = () => {
   return (
@@ -17,6 +18,9 @@ const App = () => {
           </Route>
           <Route path="/sellers">
             <SellerContainer />
+          </Route>
+          <Route path="/">
+            <Login />
           </Route>
         </Switch>
       </Router>
