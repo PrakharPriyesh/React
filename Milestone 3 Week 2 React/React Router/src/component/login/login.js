@@ -32,9 +32,17 @@ class Login extends Component {
 
     render() {
         const { username, password, loggedIn } = this.state
+        const sessionUser = sessionStorage.getItem("id")
+        const sessionPassword = sessionStorage.getItem("pass")
+
+        if (sessionUser != null || sessionPassword != null) {
+            return <Redirect to="/sellers" />
+        }
+
         if (loggedIn) {
             return <Redirect to="/sellers" />
         }
+
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
