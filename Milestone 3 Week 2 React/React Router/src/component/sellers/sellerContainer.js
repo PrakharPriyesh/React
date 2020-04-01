@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Seller } from './';
 import { productList } from '../../utils';
+import { Redirect } from 'react-router-dom';
 
 class SellerContainer extends Component {
     constructor(props) {
@@ -112,6 +113,13 @@ class SellerContainer extends Component {
     }
 
     render() {
+        const sessionUser = sessionStorage.getItem("id")
+        const sessionPassword = sessionStorage.getItem("pass")
+        
+        if (sessionUser==null || !sessionPassword==null) {
+           return <Redirect to="/login" />
+        }
+        
         let { search, products, totalCartValue, cartProducts } = this.state
         return (
             <>
