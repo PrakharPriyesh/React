@@ -1,10 +1,10 @@
-import * as actionTypes from './../actions'
+import * as actionTypes from '../actions'
 
 const initialState = {
     alertInfo : 0
 }
 
-const reducer = (state = initialState, action) => {
+const loginReducer = (state = initialState, action) => {
     if (action.type === actionTypes.LOGIN) {
         alert('Login alert' + action.value)
         return {
@@ -15,4 +15,4 @@ const reducer = (state = initialState, action) => {
     return state;
 };
 
-export default reducer;
+export default loginReducer;
