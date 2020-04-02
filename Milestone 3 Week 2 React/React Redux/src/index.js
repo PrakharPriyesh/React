@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import loginReducer from './store/reducers/login';
 
 
-const store = createStore(reducer)
+const store = createStore(loginReducer)
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 serviceWorker.unregister();
