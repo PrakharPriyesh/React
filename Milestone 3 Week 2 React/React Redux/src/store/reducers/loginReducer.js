@@ -1,9 +1,11 @@
+import * as actionTypes from './../actions'
+
 const initialState = {
     alertInfo : 0
 }
 
 const reducer = (state = initialState, action) => {
-    if (action.type === 'LOGIN') {
+    if (action.type === actionTypes.LOGIN) {
         alert('Login alert' + action.value)
         return {
             ...state,
