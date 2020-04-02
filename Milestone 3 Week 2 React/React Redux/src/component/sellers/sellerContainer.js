@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+
 import { Seller } from './';
 import { productList } from '../../utils';
-import { Redirect } from 'react-router-dom';
+import * as actionTypes from './../../store/actions'
 
 class SellerContainer extends Component {
     constructor(props) {
@@ -19,6 +22,7 @@ class SellerContainer extends Component {
         let sellerId = e.currentTarget.value
         const { cartProducts, products } = this.getUpdatedDetails(id, "add", sellerId)
         const amount = this.totalCartValue(cartProducts)
+        this.props.onProductAddedAlert()
         this.setState({
             cartProducts: cartProducts,
             products: products,
@@ -137,4 +141,10 @@ class SellerContainer extends Component {
     }
 }
 
-export default SellerContainer;
+const mapDispatchToProps = dispatch => {
+    return {
+        onProductAddedAlert: () => dispatch({ type: actionTypes.PRODUCT_ADDED, value: 2 })
+    }
+}
+
+export default connect(null, mapDispatchToProps)(SellerContainer);
