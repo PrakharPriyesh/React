@@ -1,0 +1,51 @@
+.seller-card {
+    float: left;
+    width: 1000px;
+    height: 200px;
+    position: relative;
+    border: 0px solid black;
+    box-shadow: -1px -1px 5px 2px rgba(0,0,0,0.25);
+    margin-top: 10px;
+    margin-left: 12px;
+    color: black;
+}
+
+.seller-icon {
+    position: absolute;
+    height: 140px;
+    left: 20px;
+    top: 25px;
+}
+
+.seller-name {
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    font-size: xx-large;
+}
+
+.seller-rating {
+    position: absolute;
+    top: 65px;
+    left: 200px;
+    font-size: small;
+    font-weight: 400;
+}
+
+.seller-description {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    text-align: justify;
+    width: 70%;
+    font-size: small;
+    font-weight: 500;
+}
+
+.seller-address {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    font-size: x-small;
+    font-weight: 600;
+}

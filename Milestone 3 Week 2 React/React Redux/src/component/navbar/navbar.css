@@ -1,0 +1,69 @@
+.navigation-bar {
+    background-color: black;
+    color: white;
+    height: 60px;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+.brand-name {
+    float: left;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.navigation-links {
+    margin-left: 200px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.navigation-links a {
+    float: left;
+    color: rgb(177, 174, 174);
+    margin: 5px;
+    text-decoration: none;
+}
+
+.navigation-links a:hover {
+    color: rgb(70, 70, 70);
+}
+
+.navigation-links a.active {
+    color: #f2f2f2;
+}
+
+.navigation-bar input {
+    float: right;
+    height: 35px;
+    min-width: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.navbar-logout-button {
+    float: right;
+    border: 0px;
+    background: none;
+    color: white;
+    margin-right: 10px;
+    height: 35px;
+    margin-top: 7px;
+    line-height: 35px;
+    vertical-align: center;
+}
+
+.navbar-logout-button:hover {
+    float: right;
+    border-radius: 3px;
+    background: whitesmoke;
+    color: black;
+    height: 35px;
+    margin-top: 8px;
+    line-height: 35px;
+    vertical-align: center;
+}

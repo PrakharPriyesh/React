@@ -1,0 +1,14 @@
+.login-container {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    margin-top: 15%;
+    margin-left: 40%;
+}
+
+.login-heading {
+    display: flexbox;
+    font-size: xx-large;
+    font-weight: 600;
+}

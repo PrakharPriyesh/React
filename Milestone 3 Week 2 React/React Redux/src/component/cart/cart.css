@@ -1,0 +1,23 @@
+.cart-bar {
+    background-color: black;
+    color: white;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+.cart-name {
+    float: left;
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.cart-value {
+    float: right;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-right: 10px;
+    font-size: medium;
+}
