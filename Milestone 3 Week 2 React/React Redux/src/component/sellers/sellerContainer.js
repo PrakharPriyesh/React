@@ -22,7 +22,7 @@ class SellerContainer extends Component {
         let sellerId = e.currentTarget.value
         const { cartProducts, products } = this.getUpdatedDetails(id, "add", sellerId)
         const amount = this.totalCartValue(cartProducts)
-        this.props.onProductAddedAlert()
+        this.props.onProductAddedAlert();
         this.setState({
             cartProducts: cartProducts,
             products: products,
@@ -140,6 +140,12 @@ class SellerContainer extends Component {
         );
     }
 }
+
+// const mapStateToProps = state => {
+//     return {
+//         products: state.alertInfo
+//     };
+// };
 
 const mapDispatchToProps = dispatch => {
     return {

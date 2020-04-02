@@ -4,9 +4,9 @@ const initialState = {
     alertInfo: 0
 }
 
-const loginReducer = (state = initialState, action) => {
-    if (action.type === actionTypes.LOGIN) {
-        alert('Login alert' + action.value)
+const productReducer = (state = initialState, action) => {
+    if (action.type === actionTypes.PRODUCT_ADDED) {
+        alert('item added' + action.value)
         return {
             ...state,
             alertInfo: action.value
@@ -15,4 +15,4 @@ const loginReducer = (state = initialState, action) => {
     return state;
 };
 
-export default loginReducer;
+export default productReducer;
