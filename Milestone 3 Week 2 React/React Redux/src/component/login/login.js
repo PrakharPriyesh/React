@@ -24,11 +24,11 @@ class Login extends Component {
 
     submitHandler = (e) => {
         e.preventDefault()
-        this.props.onLoginAlert();
         const { username, password } = this.state
         if (username === 'a' && password === 'a') {
             sessionStorage.setItem('id', 'red')
             sessionStorage.setItem('pass', "pandas")
+            this.props.onLoginAlert();
             this.setState({
                 loggedIn: true
             })
