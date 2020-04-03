@@ -1,6 +1,7 @@
 import React from 'react';
-import { CartItem } from '.'
-import './cart.css'
+import PropTypes from 'prop-types';
+import { CartItem } from '.';
+import './cart.css';
 
 const Cart = ({ totalCarValue, cartProducts, removeItemFromCart }) => {
     return (
@@ -17,5 +18,12 @@ const Cart = ({ totalCarValue, cartProducts, removeItemFromCart }) => {
         </>
     );
 }
+
+Cart.propTypes = {
+    totalCarValue: PropTypes.func,
+    cartProducts: PropTypes.object,
+    removeItemFromCart: PropTypes.func
+}
+
 
 export default Cart;
