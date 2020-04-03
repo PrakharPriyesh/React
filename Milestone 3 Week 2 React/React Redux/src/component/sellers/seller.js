@@ -1,8 +1,10 @@
 import React from 'react';
+import { SellerList } from '.';
+import PropTypes from 'prop-types';
+
 import Cart from '../cart';
 import Products from '../products';
 import Navbar from '../navbar';
-import { SellerList } from '.';
 import './seller.css';
 
 const Seller = ({ search, updateSearch, products, addItemToCartHandler, totalCartValue, cartProducts, removeItemFromCart }) => {
@@ -39,6 +41,16 @@ const Seller = ({ search, updateSearch, products, addItemToCartHandler, totalCar
             </div>
         </>
     );
+}
+
+Seller.propTypes = {
+    search: PropTypes.string,
+    updateSearch: PropTypes.func,
+    products: PropTypes.object,
+    addItemToCartHandler: PropTypes.func,
+    totalCartValue: PropTypes.number,
+    cartProducts: PropTypes.object,
+    removeItemFromCart: PropTypes.func
 }
 
 export default Seller;
