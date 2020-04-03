@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import './navbar.css'
 import { Redirect } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
+import './navbar.css'
 
 class Navbar extends Component {
     constructor(props) {
@@ -41,5 +43,11 @@ class Navbar extends Component {
         );
     }
 }
+
+Navbar.propTypes = {
+    search : PropTypes.string,
+    updateSearch: PropTypes.func
+};
+
 
 export default Navbar;
