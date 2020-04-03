@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types';
+
 import * as actionTypes from './../../store/actions'
-
-
 import './login.css'
 
 class Login extends Component {
@@ -73,5 +73,11 @@ const mapDispatchToProps = dispatch => {
         onLoginAlert: () => dispatch({ type: actionTypes.LOGIN, value: 1 })
     };
 };
+
+Login.propTypes = {
+    onLoginAlert : PropTypes.func,
+    
+}
+
 
 export default connect(null, mapDispatchToProps)(Login);
