@@ -1,5 +1,6 @@
 import React from 'react';
-import './productItem.css'
+import PropTypes from 'prop-types';
+import './productItem.css';
 
 const ProductCard = ({ element, sellerId, addItemToCartHandler, uniqueKey }) => {
     const { img, name, stock, price } = element
@@ -16,6 +17,13 @@ const ProductCard = ({ element, sellerId, addItemToCartHandler, uniqueKey }) => 
             </div>
         </div>
     );
+}
+
+ProductCard.propTypes = {
+    element: PropTypes.object,
+    sellerId: PropTypes.string,
+    addItemToCartHandler: PropTypes.func,
+    uniqueKey: PropTypes.string
 }
 
 export default ProductCard;
