@@ -3,10 +3,9 @@ import { SellerCard } from '..'
 import { sellerDetails } from '../../../utils'
 
 const SellerList = () => {
-
-    const getSellerCards = () => {
-        let sellerList = (
-            Object.keys(sellerDetails).map((key) => {
+    return (
+        <div>
+            {Object.keys(sellerDetails).map((key) => {
                 return <SellerCard
                     key={key}
                     id={key}
@@ -17,21 +16,9 @@ const SellerList = () => {
                     rating={sellerDetails[key].rating}
                 />
             })
-        )
-        return sellerList
-    }
-
-    let sellerList = getSellerCards()
-    if (window.location.href === 'http://localhost:3000/sellers') {
-        return (
-            <div style={{ padding: "5px" }}>
-                {sellerList}
-            </div>
-        );
-    }
-    else {
-        return <></>
-    }
+            }
+        </div>
+    );
 }
 
 export default SellerList;
