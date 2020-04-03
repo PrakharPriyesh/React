@@ -1,5 +1,6 @@
 import React from 'react';
-import { ProductItem } from '.'
+import PropTypes from 'prop-types';
+import { ProductItem } from '.';
 
 const ProductsContainer = ({ products, addItemToCartHandler, search }) => {
 
@@ -41,6 +42,12 @@ const ProductsContainer = ({ products, addItemToCartHandler, search }) => {
             }
         </>
     );
+}
+
+ProductsContainer.propTypes = {
+    products : PropTypes.object,
+    addItemToCartHandler : PropTypes.func,
+    search : PropTypes.string
 }
 
 export default ProductsContainer;
