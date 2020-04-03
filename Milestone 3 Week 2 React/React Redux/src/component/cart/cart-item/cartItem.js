@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './cartItem.css'
 
 const CartItem = ({ cartProducts, removeItemFromCart }) => {
@@ -23,6 +24,11 @@ const CartItem = ({ cartProducts, removeItemFromCart }) => {
             }
         </>
     );
+}
+
+CartItem.propTypes = {
+    cartProducts : PropTypes.object,
+    removeItemFromCart: PropTypes.func
 }
 
 export default CartItem;
