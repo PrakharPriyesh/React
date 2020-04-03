@@ -22,7 +22,7 @@ class Login extends Component {
         e.preventDefault()
         const { username, password } = this.state
 
-        if (username == 'a' && password == 'a') {
+        if (username === 'a' && password === 'a') {
             sessionStorage.setItem('id', 'red')
             sessionStorage.setItem('pass', "pandas")
             this.setState({
