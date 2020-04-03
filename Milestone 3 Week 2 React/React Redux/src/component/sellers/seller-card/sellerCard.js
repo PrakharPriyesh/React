@@ -1,6 +1,8 @@
 import React from 'react';
-import './sellerCard.css';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import './sellerCard.css';
+
 
 const SellerCard = ({ id, name, contact, address, icon, rating }) => {
     return (
@@ -30,6 +32,14 @@ const SellerCard = ({ id, name, contact, address, icon, rating }) => {
             </div>
         </Link>
     )
+}
+
+SellerCard.propTypes = {
+    id: PropTypes.string,
+    name: PropTypes.string,
+    contact: PropTypes.string,
+    icon: PropTypes.string,
+    rating: PropTypes.string
 }
 
 export default SellerCard;
