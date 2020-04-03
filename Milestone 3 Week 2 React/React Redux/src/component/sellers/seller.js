@@ -6,6 +6,18 @@ import { SellerList } from '.';
 import './seller.css';
 
 const Seller = ({ search, updateSearch, products, addItemToCartHandler, totalCartValue, cartProducts, removeItemFromCart }) => {
+
+    let sellerVisible, productsVisible = false
+    let href = window.location.href
+    if (href === 'http://localhost:3000/sellers/' || href === 'http://localhost:3000/sellers') {
+        sellerVisible = true
+    }
+    href = window.location.href.split("/")
+    let sellerId = href[href.length - 1]
+    if (window.location.href === ('http://localhost:3000/sellers/' + sellerId) && sellerId !== '') {
+        productsVisible = true
+    }
+
     return (
         <>
             <Navbar
@@ -14,12 +26,8 @@ const Seller = ({ search, updateSearch, products, addItemToCartHandler, totalCar
             />
             <div className="grid-container">
                 <div className="grid-item item1">
-                    <SellerList />
-                    <Products
-                        products={products}
-                        addItemToCartHandler={addItemToCartHandler}
-                        search={search}
-                    />
+                    {sellerVisible ? <SellerList /> : null}
+                    {productsVisible ? <Products products={products} addItemToCartHandler={addItemToCartHandler} search={search} /> : null}
                 </div>
                 <div className="grid-item item2">
                     <Cart
