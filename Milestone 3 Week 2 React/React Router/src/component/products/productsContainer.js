@@ -6,25 +6,22 @@ const ProductsContainer = ({ products, addItemToCartHandler, search }) => {
     const getFilteredProducts = (products, search) => {
         let href = window.location.href.split("/")
         let sellerId = href[href.length - 1]
-
-        if (window.location.href === ('http://localhost:3000/sellers/' + sellerId)) {
-            products = Object.assign({}, ...products[sellerId]);
-            let filteredProducts = (
-                Object.keys(products).map((key) => {
-                    if (products[key].name.toLowerCase().indexOf(search.toLowerCase()) !== -1) {
-                        let data = {};
-                        data[key] = products[key];
-                        return data;
-                    }
-                    return null;
-                })
-            )
-            filteredProducts = Object.assign({}, ...filteredProducts);
-            return {filteredProducts, sellerId}
-        }
+        products = Object.assign({}, ...products[sellerId]);
+        let filteredProducts = (
+            Object.keys(products).map((key) => {
+                if (products[key].name.toLowerCase().indexOf(search.toLowerCase()) !== -1) {
+                    let data = {};
+                    data[key] = products[key];
+                    return data;
+                }
+                return null;
+            })
+        )
+        filteredProducts = Object.assign({}, ...filteredProducts);
+        return { filteredProducts, sellerId }
     }
 
-    const {filteredProducts, sellerId} = getFilteredProducts(products, search);
+    const { filteredProducts, sellerId } = getFilteredProducts(products, search);
 
     return (
         <>
@@ -44,7 +41,6 @@ const ProductsContainer = ({ products, addItemToCartHandler, search }) => {
             }
         </>
     );
-
 }
 
 export default ProductsContainer;
