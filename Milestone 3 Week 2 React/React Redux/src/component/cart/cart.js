@@ -20,7 +20,7 @@ const Cart = ({ totalCarValue, cartProducts, removeItemFromCart }) => {
 }
 
 Cart.propTypes = {
-    totalCarValue: PropTypes.func,
+    totalCarValue: PropTypes.number,
     cartProducts: PropTypes.object,
     removeItemFromCart: PropTypes.func
 }
