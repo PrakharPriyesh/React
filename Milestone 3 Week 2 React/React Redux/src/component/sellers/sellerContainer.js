@@ -22,7 +22,7 @@ class SellerContainer extends Component {
         let sellerId = e.currentTarget.value
         const { cartProducts, products } = this.getUpdatedDetails(id, "add", sellerId)
         const amount = this.totalCartValue(cartProducts)
-        this.props.onProductAddedAlert();
+        //this.props.onProductAddedAlert();
         this.setState({
             cartProducts: cartProducts,
             products: products,
@@ -117,6 +117,7 @@ class SellerContainer extends Component {
     }
 
     render() {
+        console.log("changed")
         const sessionUser = sessionStorage.getItem("id")
         const sessionPassword = sessionStorage.getItem("pass")
 
@@ -143,14 +144,15 @@ class SellerContainer extends Component {
 
 // const mapStateToProps = state => {
 //     return {
-//         products: state.alertInfo
+//         products: state.products
 //     };
 // };
 
-const mapDispatchToProps = dispatch => {
-    return {
-        onProductAddedAlert: () => dispatch({ type: actionTypes.PRODUCT_ADDED, value: 2 })
-    }
-}
+// const mapDispatchToProps = dispatch => {
+//     return {
+//         onProductAddedAlert: (products) => dispatch({ type: actionTypes.PRODUCT_ADDED, value: products })
+//     }
+// }
 
-export default connect(null, mapDispatchToProps)(SellerContainer);
+// export default connect(mapStateToProps, mapDispatchToProps)(SellerContainer);
+export default SellerContainer;

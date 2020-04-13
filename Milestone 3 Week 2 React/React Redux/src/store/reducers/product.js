@@ -1,7 +1,7 @@
 import * as actionTypes from '../actions'
 
 const initialState = {
-    alertInfo: 0
+    products: {}
 }
 
 const productReducer = (state = initialState, action) => {
@@ -9,7 +9,7 @@ const productReducer = (state = initialState, action) => {
         alert('item added' + action.value)
         return {
             ...state,
-            alertInfo: action.value
+            products: action.value
         }
     }
     return state;
