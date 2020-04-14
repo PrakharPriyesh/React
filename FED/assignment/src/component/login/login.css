@@ -4,6 +4,212 @@
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.rp-logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.login-heading {
+  position: absolute;
+  color: white;
+  font-size: 32.5px;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 6%;
+  font-weight: bold;
+}
+
+.login-description {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+  margin-top: 12%;
+}
+
+.login-card {
+  position: absolute;
+  height: 40%;
+  width: 25%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2%;
+  margin-top: 20%;
+  margin-left: 35%;
+}
+
+.login-card-heading {
+  float: left;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #5c5b5b;
+}
+
+.login-form {
+  height: 85%;
+  width: 85%;
+  position: relative;
+}
+
+.login-form-username {
+  position: absolute;
+  height: 25%;
+  top: 25%;
+  text-align: left;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #5c5b5b;
+}
+
+.login-form-username input {
+  position: absolute;
+  left: 0;
+  margin-top: 2%;
+  width: 100%;
+  height: 40%;
+  padding: 1%;
+  padding-left: 5%;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+}
+
+.login-form-password {
+  position: absolute;
+  height: 25%;
+  top: 55%;
+  text-align: left;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #5c5b5b;
+}
+
+.login-form-password input {
+  position: absolute;
+  left: 0;
+  margin-top: 2%;
+  width: 100%;
+  height: 40%;
+  padding: 1%;
+  padding-left: 5%;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+}
+
+.login-form-rememberme {
+  position: absolute;
+  top: 82%;
+  text-align: left;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #5c5b5b;
+}
+
+.login-form-rememberme input {
+  position: absolute;
+  left: 0;
+  margin-top: 2%;
+}
+
+.login-form-rememberme div {
+  position: absolute;
+  left: 8%;
+  margin-top: 0.5%;
+}
+
+.login-form-button {
+  position: absolute;
+  top: 95%;
+  width: 100%;
+  height: 25%;
+}
+
+.login-form-button button {
+  position: absolute;
+  left: 0;
+  font-size: 15px;
+  width: 20%;
+  height: 60%;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: dodgerblue;
+}
+
+.footer {
+  position: absolute;
+  color: white;
+  bottom: 20px;
+  margin-left: 40%;
+}
+
+@media screen and (max-width: 376px) {
+  .login-heading {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25%;
+    width: 80%;
+    font-size: 25px;
+  }
+  .login-description {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 65%;
+    width: 86%;
+    font-size: 15px;
+  }
+  .login-card {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 110%;
+    padding: 5%;
+    width: 70%;
+    height: 35%;
+  }
+  .login-card-heading {
+    float: left;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #5c5b5b;
+    margin-top: 5%;
+  }
+  .login-form-username {
+    top: 22%;
+  }
+  .login-form-password {
+    top: 50%;
+  }
+  .login-form-rememberme {
+    top: 75%;
+    font-size: 15px;
+  }
+  .login-form-rememberme div {
+    position: absolute;
+    left: 10%;
+    margin-top: 0.2%;
+  }
+  .login-form-button {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 25%;
+  }
+  .login-form-button button {
+    width: 30%;
+    height: 45%;
+  }
+  .footer {
+    margin-left: 15%;
+    font-size: small;
+  }
 }
 /*# sourceMappingURL=login.css.map */
