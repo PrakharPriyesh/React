@@ -5,16 +5,15 @@
   display: grid;
   -ms-grid-columns: auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto;
-  grid-gap: 1px;
+  grid-gap: 0px;
   background-color: #2196f3;
   padding: 0px;
 }
 
 .dashboard-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  padding: 0px 0;
 }
 
 .item1 {
