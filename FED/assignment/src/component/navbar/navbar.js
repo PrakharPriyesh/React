@@ -1,11 +1,18 @@
 import React from 'react';
 
-import './navbar.css'
+import rpLogo from './../../asset/rp-logo.png';
+import profilePhoto from './../../asset/avatar_one.jpg'
+import './navbar.css';
 
 function Navbar(props) {
     return (
         <div className="navbar">
-            fsfds
+            <div className="navbar-logo-container">
+                <img src={rpLogo} alt={rpLogo}/>
+            </div>
+            <div className="navbar-profile-container">
+                <img src={profilePhoto} alt={profilePhoto} />
+            </div>
         </div>
     );
 }
