@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,eAAe;CAC1B",
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,OAAO,EAAE,YAAY;EACrB,YAAY,EAAE,EAAE;EAChB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,eAAe;CAC1B",
     "sources": [
         "progressCard.scss"
     ],
