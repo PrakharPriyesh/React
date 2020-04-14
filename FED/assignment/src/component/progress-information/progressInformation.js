@@ -6,8 +6,13 @@ import './progressInformation.css'
 function ProgressInformation(props) {
     return (
         <div className="progress-information-container">
-            <font>ProgressInformation</font>
-            <ProgressCard />
+            <font>PROGRESS INFORMATION</font>
+            <div className="progress-card-container">
+                <ProgressCard />
+                <ProgressCard />
+                <ProgressCard />
+                <ProgressCard />
+            </div>
         </div>
     );
 }
