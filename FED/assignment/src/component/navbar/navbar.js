@@ -12,6 +12,7 @@ function Navbar(props) {
             </div>
             <div className="navbar-profile-container">
                 <img src={profilePhoto} alt={profilePhoto} />
+               <font>&#9660;</font>
             </div>
         </div>
     );
