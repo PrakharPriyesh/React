@@ -1,4 +1,54 @@
 .sidebar {
     height: 100%;
     width: 100%;
+    background-color: white;
+    padding-top: 15%;
+}
+
+.sidebar-dashboard {
+    position: relative;
+    height: 10%;
+    border: 1px solid black;
+}
+
+.sidebar-dashboard button {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    left: 10px;
+}
+
+.sidebar-dashboard img {
+    position: absolute;
+    height: 25%;
+    width: auto;
+    right: 5%;
+    top: 40%;
+}
+
+.sidebar-catalog {
+    position: relative;
+    height: 10%;
+    border: 1px solid black;
+}
+
+.sidebar-catalog button {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    left: 10px;
+}
+
+.sidebar-catalog img {
+    position: absolute;
+    height: 25%;
+    width: auto;
+    right: 5%;
+    top: 40%;
 }
