@@ -8,11 +8,11 @@ function Sidebar(props) {
     return (
         <div className="sidebar">
         <div className="sidebar-dashboard">
-            <button>Dashboard</button>
+            <div>Dashboard</div>
             <img src={homeIcon} alt={homeIcon} />
         </div>
         <div className="sidebar-catalog">
-            <button>Product Catalog</button>
+            <div>Product Catalog</div>
             <img src={stackIcon} alt={stackIcon} />
         </div>
         </div>

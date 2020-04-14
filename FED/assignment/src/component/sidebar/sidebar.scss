@@ -2,53 +2,57 @@
     height: 100%;
     width: 100%;
     background-color: white;
-    padding-top: 15%;
+    padding-top: 5%;
+    color: grey;
 }
 
 .sidebar-dashboard {
     position: relative;
     height: 10%;
-    border: 1px solid black;
 }
 
-.sidebar-dashboard button {
+.sidebar-dashboard div {
     position: absolute;
-    height: 100%;
+    text-align: left;
+    height: 90%;
     width: 80%;
-    font-size: 20px;
-    border: none;
-    padding: 0;
-    left: 10px;
+    font-size: 16px;
+    line-height: 74px;
+    left: 10%;
+    border-bottom: 1px solid rgb(184, 184, 184);
 }
 
 .sidebar-dashboard img {
     position: absolute;
-    height: 25%;
+    height: 20%;
     width: auto;
-    right: 5%;
-    top: 40%;
+    right: 10%;
+    top: 38%;
 }
 
 .sidebar-catalog {
     position: relative;
     height: 10%;
-    border: 1px solid black;
 }
 
-.sidebar-catalog button {
+.sidebar-catalog div {
     position: absolute;
+    text-align: left;
+    line-height: 74px;
+    vertical-align: middle;
+    background-color: white;
     height: 100%;
     width: 80%;
-    font-size: 20px;
+    font-size: 16px;
     border: none;
     padding: 0;
-    left: 10px;
+    left: 10%;
 }
 
 .sidebar-catalog img {
     position: absolute;
-    height: 25%;
+    height: 20%;
     width: auto;
-    right: 5%;
-    top: 40%;
+    right: 10%;
+    top: 38%;
 }
