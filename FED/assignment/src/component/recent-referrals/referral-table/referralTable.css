@@ -11,7 +11,8 @@
 
 .referral-table td {
   text-align: center;
-  padding: 5px;
+  padding: 8px;
   border-bottom: 1px solid #ddd;
+  font-size: 14px;
 }
 /*# sourceMappingURL=referralTable.css.map */
