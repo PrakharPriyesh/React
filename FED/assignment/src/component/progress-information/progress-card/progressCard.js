@@ -16,7 +16,7 @@ function ProgressCard(props) {
                 180M
             </div>
             <div className="progress-card-progress-bar">
-                <div className="progress-card-progress" style={{width:"65%", height:"100%",backgroundColor:"blue"}}>
+                <div className="progress-card-progress" style={{width:"65%", height:"100%",backgroundColor:"dodgerblue"}}>
                 </div>
             </div>
             <div className="progress-card-info">
