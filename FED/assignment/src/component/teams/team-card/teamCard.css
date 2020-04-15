@@ -1,4 +1,5 @@
 .team-card {
+  position: relative;
   display: inline-block;
   width: 23%;
   height: 85%;
@@ -10,16 +11,36 @@
 }
 
 .team-card-name {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
   font-size: 21px;
   font-weight: bolder;
-  margin-top: 10%;
+}
+
+.team-card-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 10%;
+  top: 35%;
+  background-color: dodgerblue;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  color: white;
 }
 
 .team-card-expense {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 35%;
   padding: 8px;
   font-size: 15px;
   font-weight: bold;

@@ -9,8 +9,9 @@ function TeamCard(props) {
                 Team One
             </div>
             <div className="team-card-icon">
-
+                KRD
             </div>
+            
             <div className="team-card-expense">
                 Current Month Charged &#36; 10,200.00
             </div>
