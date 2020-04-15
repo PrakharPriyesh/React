@@ -10,11 +10,12 @@
 }
 
 .card-details img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8%;
-    height: 25%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10%;
+    height: 20%;
     width: auto;
 }
 
@@ -30,29 +31,44 @@
 }
 
 .card-details-card-name {
-    margin-top: 3%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
     font-size: 21px;
     font-weight: bold;
 }
 
 .card-details-card-number {
-    margin-top: 2%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
     font-size: 16px;
     font-weight: bold;
     color: rgb(158, 158, 158);
 }
 
 .card-details-card-company {
-    margin-top: 4%;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
     font-size: 16px;
     font-weight: bold;
     color: rgb(100, 100, 100);
 }
 
 .card-details-card-expiry {
-    width: 80%;
+    position: absolute;
+    top: 88%;
+    left: 0;
+    right: 0;
     margin: auto;
-    margin-top: 6%;
+    width: 80%;
     padding: 2%;
     font-size: 12px;
     font-weight: bold;
