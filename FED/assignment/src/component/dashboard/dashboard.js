@@ -4,7 +4,7 @@ import React from 'react';
 import './dashboard.css';
 import Navbar from './../navbar/navbar';
 import Sidebar from './../sidebar/sidebar';
-import ProcessingInstruction from './../progress-information/progressInformation';
+import ProcessingInformation from './../progress-information/progressInformation';
 
 
 function Dashboard(props) {
@@ -16,7 +16,7 @@ function Dashboard(props) {
                     <Sidebar />
                 </div>
                 <div className="item2">
-                    <ProcessingInstruction />
+                    <ProcessingInformation />
                 </div>
                 <div className="item3">3</div>
                 <div className="item4">4</div>
