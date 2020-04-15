@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './cardDetails.css';
+
 function CardDetails(props) {
     return (
-        <div>
+        <div className="card-details">
             
         </div>
     );
