@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf;;AAED,AAAA,sBAAsB,CAAC;EACnB,SAAS,EAAE,MAAM;EACjB,GAAG,EAAE,EAAE;EACP,IAAI,EAAE,EAAE;CACX",
+    "sources": [
+        "paymentCards.scss"
+    ],
+    "names": [],
+    "file": "paymentCards.css"
+}
