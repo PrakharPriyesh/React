@@ -5,8 +5,7 @@
     grid-template-columns: auto auto auto auto auto auto;
     grid-gap: 0px;
     background-color: rgb(248, 248, 248);
-    padding: 0px;
-
+    grid-auto-rows: 60px;
 }
 
 .dashboard-container > div {
@@ -14,24 +13,27 @@
 }
 
 .item1 {
-    grid-row: 1 / 9;
+    grid-row: 1 / 21;
     max-width: 250px;
     border: 0px;
 }
 
 .item2 {
     grid-column: 2 / 7;
-    grid-row: 1 / 4;
+    grid-row: 1 / 6;
 }
 
 .item3 {
     grid-column: 2 / 7;
+    grid-row: 6 / 11;
 }
 
 .item4 {
     grid-column: 2 / 7;
+    grid-row: 11 / 16;
 }
 
 .item5 {
     grid-column: 2 / 7;
+    grid-row: 16 / 21;
 }

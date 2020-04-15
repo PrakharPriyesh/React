@@ -7,7 +7,7 @@
       grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 0px;
   background-color: #f8f8f8;
-  padding: 0px;
+  grid-auto-rows: 60px;
 }
 
 .dashboard-container > div {
@@ -16,8 +16,8 @@
 
 .item1 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 8;
-  grid-row: 1 / 9;
+  -ms-grid-row-span: 20;
+  grid-row: 1 / 21;
   max-width: 250px;
   border: 0px;
 }
@@ -27,25 +27,34 @@
   -ms-grid-column-span: 5;
   grid-column: 2 / 7;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
+  -ms-grid-row-span: 5;
+  grid-row: 1 / 6;
 }
 
 .item3 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2 / 7;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 5;
+  grid-row: 6 / 11;
 }
 
 .item4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2 / 7;
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 5;
+  grid-row: 11 / 16;
 }
 
 .item5 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2 / 7;
+  -ms-grid-row: 16;
+  -ms-grid-row-span: 5;
+  grid-row: 16 / 21;
 }
 /*# sourceMappingURL=dashboard.css.map */
