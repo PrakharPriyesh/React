@@ -21,9 +21,9 @@
 
 .card-details-card-amount {
   position: absolute;
-  top: 8%;
+  top: 4%;
   right: -5%;
-  padding: 5px;
+  padding: 8px;
   color: white;
   font-weight: bolder;
   font-size: 18px;
