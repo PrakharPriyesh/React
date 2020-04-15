@@ -6,9 +6,9 @@
 
 .teams-heading {
   position: absolute;
-  top: 4%;
+  top: 8%;
   left: 4%;
-  font-size: 16.5px;
+  font-size: 18px;
   font-weight: bolder;
 }
 
@@ -16,7 +16,7 @@
   position: absolute;
   height: 85%;
   width: 96%;
-  top: 15%;
+  top: 25%;
   left: 2%;
 }
 /*# sourceMappingURL=teams.css.map */
