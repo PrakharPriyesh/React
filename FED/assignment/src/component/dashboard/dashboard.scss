@@ -4,13 +4,13 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-gap: 0px;
-    background-color: #2196f3;
+    background-color: rgb(248, 248, 248);
     padding: 0px;
 
 }
 
 .dashboard-container > div {
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 0px 0;
 }
 
