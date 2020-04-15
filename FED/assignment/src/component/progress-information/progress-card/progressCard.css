@@ -1,9 +1,62 @@
 .progress-card {
   display: inline-block;
-  margin-left: 4%;
+  margin-left: 3%;
   margin-top: 1%;
-  width: 45%;
+  width: 44%;
   height: 40%;
   border: 1px solid black;
+  position: relative;
+  padding: 1%;
+}
+
+.progress-card-heading {
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  color: #505050;
+}
+
+.progress-card-details {
+  position: absolute;
+  top: 37%;
+  font-size: 13px;
+  color: gray;
+  font-weight: bold;
+}
+
+.progress-card-value {
+  position: absolute;
+  top: 10%;
+  font-size: 23px;
+  right: 8%;
+  display: inline;
+  font-weight: bolder;
+}
+
+.progress-card-progress-bar {
+  position: absolute;
+  height: 3%;
+  width: 90%;
+  top: 65%;
+  border: 0px solid red;
+  border-radius: 2px;
+  background-color: #e9e9e9;
+}
+
+.progress-card-change {
+  position: absolute;
+  top: 75%;
+  font-size: 10px;
+  color: #646464;
+  font-weight: bold;
+}
+
+.progress-card-percentage {
+  position: absolute;
+  top: 75%;
+  font-size: 10px;
+  color: #646464;
+  font-weight: bold;
+  right: 8%;
 }
 /*# sourceMappingURL=progressCard.css.map */
