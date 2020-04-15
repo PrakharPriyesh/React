@@ -6,7 +6,8 @@ import Navbar from './../navbar/navbar';
 import Sidebar from './../sidebar/sidebar';
 import ProcessingInformation from './../progress-information/progressInformation';
 import RecentReferrals from './../recent-referrals/recentReferrals';
-import PaymentCards from './../payment-cards/paymentCards'
+import PaymentCards from './../payment-cards/paymentCards';
+import Teams from './../teams/teams';
 
 
 function Dashboard(props) {
@@ -26,7 +27,9 @@ function Dashboard(props) {
                 <div className="item4">
                     <PaymentCards />
                 </div>
-                <div className="item5">5</div>
+                <div className="item5">
+                    <Teams />
+                </div>
             </div>
         </>
     );
