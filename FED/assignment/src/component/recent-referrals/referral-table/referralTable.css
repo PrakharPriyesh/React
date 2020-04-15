@@ -1,0 +1,17 @@
+.referral-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.referral-table th {
+  background-color: #e0e9e9;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.referral-table td {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+/*# sourceMappingURL=referralTable.css.map */
