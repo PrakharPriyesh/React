@@ -4,6 +4,8 @@
   background-color: white;
   padding-top: 5%;
   color: grey;
+  -webkit-box-shadow: 14px 0px 44px -19px #4f4f4f;
+          box-shadow: 14px 0px 44px -19px #4f4f4f;
 }
 
 .sidebar-dashboard {
