@@ -2,6 +2,7 @@ import React from 'react';
 
 import Navbar from './../navbar/navbar';
 import Sidebar from './../sidebar/sidebar';
+import Products from './../products/products'
 import './catalog.css';
 
 function Catalog(props) {
@@ -13,7 +14,7 @@ function Catalog(props) {
                     <Sidebar />
                 </div>
                 <div className="catalog-item2">
-                    
+                    <Products />
                 </div>
             </div>
         </>
