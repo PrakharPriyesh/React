@@ -1,12 +1,18 @@
 import React from 'react';
 
-import './teams.css'
+import TeamCard from './team-card/teamCard';
+import './teams.css';
 
 function Teams(props) {
     return (
         <div className="teams">
             <div className="teams-heading">YOUR TEAMS</div>
-            
+            <div className="team-card-container">
+                <TeamCard />
+                <TeamCard />
+                <TeamCard />
+                <TeamCard />
+            </div>
         </div>
     );
 }
