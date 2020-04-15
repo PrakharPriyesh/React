@@ -3,13 +3,13 @@
   width: 97%;
   height: 97%;
   padding: 1.5%;
-  background-color: white;
+  background-color: #f8f8f8;
 }
 
 .progress-information-container font {
   position: absolute;
   font-size: 16.5px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .progress-card-container {
