@@ -39,12 +39,16 @@
 
 .progress-card-progress-bar {
   position: absolute;
-  height: 3%;
+  height: 5.5%;
   width: 90%;
-  top: 64%;
+  top: 60%;
   left: 5%;
   border-radius: 2px;
   background-color: #e9e9e9;
+}
+
+.progress-card-progress {
+  border-radius: 2px;
 }
 
 .progress-card-change {

@@ -38,19 +38,20 @@
 
 .progress-card-progress-bar {
     position: absolute;
-    height: 3%  ;
+    height: 5.5%;
     width: 90%;
-    top: 64%;
+    top: 60%;
     left: 5%;
     border-radius: 2px;
     background-color: rgb(233, 233, 233);
 }
 
-// .progress-card-progress {
-//     //width: 50%;
-//     height: 100%;
-//     //background-color: blue;
-// }
+.progress-card-progress {
+    //width: 50%; Added as inline css
+    //height: 100%;
+    border-radius: 2px;
+    //background-color: blue;
+}
 
 .progress-card-change {
     position: absolute;
