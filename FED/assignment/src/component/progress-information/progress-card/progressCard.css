@@ -73,6 +73,8 @@
   .progress-card {
     width: 92%;
     margin-left: 4%;
+    height: 21%;
+    margin-top: 2%;
   }
   .progress-card-heading {
     font-size: 14px;
