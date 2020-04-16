@@ -1,7 +1,7 @@
 .payment-cards {
   position: relative;
   width: 100%;
-  height: 23.5%;
+  height: 50%;
 }
 
 .payment-cards-heading {
@@ -29,6 +29,7 @@
   }
   .payment-cards-card-details-container {
     top: 12%;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=paymentCards.css.map */
