@@ -9,7 +9,7 @@
     box-shadow: 0px 0px 44px -19px rgba(79,79,79,1);
 }
 
-.progress-card-heading{
+.progress-card-heading {
     position: absolute;
     font-size: 15px;
     font-weight: bolder;
@@ -69,4 +69,27 @@
     color: rgb(100, 100, 100);
     font-weight: bold;
     right: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    .progress-card {
+        width: 92%;
+        margin-left: 4%;
+    }
+
+    .progress-card-heading {
+        font-size: 14px;
+    }
+
+    .progress-card-value {
+        font-size: 21px;
+    }
+
+    .progress-card-details {
+        top: 33%;
+    }
+
+    .progress-card-progress-bar {
+        top: 58%;
+    }
 }

@@ -68,4 +68,23 @@
   font-weight: bold;
   right: 5%;
 }
+
+@media screen and (max-width: 600px) {
+  .progress-card {
+    width: 92%;
+    margin-left: 4%;
+  }
+  .progress-card-heading {
+    font-size: 14px;
+  }
+  .progress-card-value {
+    font-size: 21px;
+  }
+  .progress-card-details {
+    top: 33%;
+  }
+  .progress-card-progress-bar {
+    top: 58%;
+  }
+}
 /*# sourceMappingURL=progressCard.css.map */
