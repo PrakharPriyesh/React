@@ -18,4 +18,10 @@
   position: absolute;
   top: 15%;
 }
+
+@media screen and (max-width: 600px) {
+  .progress-information-container font {
+    font-size: 15px;
+  }
+}
 /*# sourceMappingURL=progressInformation.css.map */
