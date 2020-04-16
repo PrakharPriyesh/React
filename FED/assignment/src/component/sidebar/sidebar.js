@@ -1,12 +1,16 @@
 import React from 'react';
 
-import homeIcon from './../../asset/home.png'
-import stackIcon from './../../asset/stack.png'
-import './sidebar.css'
+import homeIcon from './../../asset/home.png';
+import stackIcon from './../../asset/stack.png';
+import rpLogo from './../../asset/rp-logo.png';
+import './sidebar.css';
 
 function Sidebar(props) {
     return (
         <div className="sidebar">
+            <div className="sidebar-logo-container">
+                <img src={rpLogo} alt={rpLogo}/>
+            </div>
             <div className="sidebar-dashboard">
                 <div>Dashboard</div>
                 <img src={homeIcon} alt={homeIcon} />
