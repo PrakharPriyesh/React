@@ -19,3 +19,17 @@
     top: 20%;
     left: 4%;
 }
+
+@media screen and (max-width: 600px) {
+    .payment-cards {
+        height: 23.5%;
+    }
+
+    .payment-cards-heading {
+        font-size: 15px;
+    }
+
+    .payment-cards-card-details-container {
+        top: 12%;
+    }
+}
