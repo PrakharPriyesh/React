@@ -1,36 +1,28 @@
 .navbar {
+  position: relative;
   top: 0;
   width: 100%;
-  height: 8%;
+  height: 6%;
   background-color: white;
   border-bottom: 1px solid rgba(79, 79, 79, 0.2);
 }
 
-.navbar-logo-container {
-  max-width: 250px;
-  float: left;
-  width: 20%;
-  height: 100%;
-  background-color: black;
-  position: relative;
-}
-
-.navbar-logo-container img {
+.navbar-icon-img {
+  display: none;
   position: absolute;
-  width: 60%;
-  height: 60%;
+  width: auto;
+  height: 50%;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 5%;
   margin: auto;
 }
 
 .navbar-profile-container {
+  position: relative;
   float: right;
   height: 100%;
-  width: 5%;
-  position: relative;
+  width: 8%;
   color: #afafaf;
 }
 
@@ -40,8 +32,7 @@
   width: auto;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  right: 50%;
   margin-top: auto;
   margin-bottom: auto;
   border-radius: 4px;
@@ -49,8 +40,24 @@
 
 .navbar-profile-container font {
   position: absolute;
-  right: 15px;
-  top: 25px;
+  right: 25%;
+  top: 40%;
   font-size: small;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-icon-img {
+    display: block;
+  }
+  .navbar-profile-container {
+    width: 25%;
+    border: 0px solid black;
+  }
+  .navbar-profile-container img {
+    right: 40%;
+  }
+  .navbar-profile-container font {
+    right: 15%;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */
