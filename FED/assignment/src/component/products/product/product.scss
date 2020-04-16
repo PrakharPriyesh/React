@@ -1,6 +1,114 @@
+.product-card-box {
+    display: inline-block;
+    width: 33.11%;
+    height: 40%;
+    //border: 1px solid rgba(112, 111, 111, 0.3);
+}
+
 .product-card {
-    display: inline-flex;
-    width: 30%;
-    height: 30%;
+    position: relative;
+    top: 5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    vertical-align: middle;
+    height: 90%;
+    width: 85%;
     border: 1px solid rgba(112, 111, 111, 0.3);
+}
+
+.product-card-img {
+    position: absolute;
+    width: auto;
+    height: 65%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.product-card-new-tag {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 7.5%;
+    left: 7.5%;
+    border-style: solid;
+    border-width: 55px 55px 0 0;
+    border-color: #ff0000 transparent transparent transparent;
+}
+
+.product-card-new-tag-text {
+    position: absolute;
+    font-size: 14px;;
+    top: 10%;
+    left: 7.5%;
+    color: white;
+    font-weight: bold;
+    transform: rotate(-45deg);
+}
+
+.product-card-info {
+    position: relative;
+    top: 65%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top: 1px solid rgba(112, 111, 111, 0.3);
+    width: 85%;
+    height: 33%;
+}
+
+.product-card-name {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+.product-card-offer-price {
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(65, 65, 65);
+}
+
+.product-card-sizes {
+    position: absolute;
+    left: 1%;
+    top: 45%;
+}
+
+.product-card-sizes div {
+    display: inline-block;
+    width: 28px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    border: 1px solid rgba(112, 111, 111, 0.5);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.product-card-actual-price {
+    position: absolute;
+    right: 1%;
+    top: 45%;
+    font-size: 16px;
+    color: rgba(71, 71, 71, 0.7);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.product-card-footer {
+    position: absolute;
+    top: 78%;
+    font-style: italic;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 5);
 }

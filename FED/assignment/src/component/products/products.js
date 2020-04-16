@@ -11,6 +11,11 @@ function Products(props) {
             <Product />
             <Product />
             <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
         </div>
     );
 }
