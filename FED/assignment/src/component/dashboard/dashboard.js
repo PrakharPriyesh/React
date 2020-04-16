@@ -13,21 +13,16 @@ import Teams from './../teams/teams';
 function Dashboard(props) {
     return (
         <>
-            <Navbar />
+
             <div className="dashboard-container">
                 <div className="item1">
                     <Sidebar />
                 </div>
                 <div className="item2">
+                    <Navbar />
                     <ProcessingInformation />
-                </div>
-                <div className="item3">
                     <RecentReferrals />
-                </div>
-                <div className="item4">
                     <PaymentCards />
-                </div>
-                <div className="item5">
                     <Teams />
                 </div>
             </div>
