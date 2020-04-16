@@ -1,0 +1,9 @@
+.product-card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 30%;
+  height: 30%;
+  border: 1px solid rgba(112, 111, 111, 0.3);
+}
+/*# sourceMappingURL=product.css.map */
