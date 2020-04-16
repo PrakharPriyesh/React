@@ -20,3 +20,20 @@
     grid-column: 2 / 7;
     grid-row: 1 / 2;
 }
+
+@media screen and (max-width: 900px) {
+
+    .catalog-container {
+        grid-template-columns: auto;
+    }
+
+    .catalog-item1 {
+        all: unset;
+        width: 0;
+        height: 0;
+    }
+
+    .catalog-item2 {
+        grid-column: 1;
+    }
+}
