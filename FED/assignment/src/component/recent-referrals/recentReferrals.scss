@@ -39,3 +39,8 @@
     left: 5%;
 }
 
+@media screen and (max-width: 600px) {
+    .recent-referrals-heading {
+        font-size: 14.5px;
+    }
+}
