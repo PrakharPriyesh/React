@@ -7,14 +7,14 @@ import './sidebar.css'
 function Sidebar(props) {
     return (
         <div className="sidebar">
-        <div className="sidebar-dashboard">
-            <div>Dashboard</div>
-            <img src={homeIcon} alt={homeIcon} />
-        </div>
-        <div className="sidebar-catalog">
-            <div>Product Catalog</div>
-            <img src={stackIcon} alt={stackIcon} />
-        </div>
+            <div className="sidebar-dashboard">
+                <div>Dashboard</div>
+                <img src={homeIcon} alt={homeIcon} />
+            </div>
+            <div className="sidebar-catalog">
+                <div>Product Catalog</div>
+                <img src={stackIcon} alt={stackIcon} />
+            </div>
         </div>
     );
 }

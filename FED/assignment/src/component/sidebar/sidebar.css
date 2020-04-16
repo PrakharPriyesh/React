@@ -1,8 +1,11 @@
 .sidebar {
+  position: relative;
   height: 100%;
   width: 100%;
   background-color: white;
   color: grey;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-box-shadow: 14px 0px 44px -19px #4f4f4f;
           box-shadow: 14px 0px 44px -19px #4f4f4f;
 }
@@ -54,5 +57,14 @@
   width: auto;
   right: 10%;
   top: 32%;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    width: 0%;
+  }
+  .sidebar div {
+    font-size: 0;
+  }
 }
 /*# sourceMappingURL=sidebar.css.map */

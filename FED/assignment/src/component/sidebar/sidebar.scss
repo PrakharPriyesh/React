@@ -1,9 +1,15 @@
+// .sidebar a {
+//     position: absolute;
+// }
+
 .sidebar {
+    position: relative;
     height: 100%;
     width: 100%;
     background-color: white;
     color: grey;
-    box-shadow: 14px 0px 44px -19px rgba(79,79,79,1);
+    transition: 0.5s;
+    box-shadow: 14px 0px 44px -19px rgba(79, 79, 79, 1);
 }
 
 .sidebar-dashboard {
@@ -53,4 +59,18 @@
     width: auto;
     right: 10%;
     top: 32%;
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar {
+        width: 0%;
+        // position: fixed;
+        // z-index: 1;
+        // top: 0;
+        // left: 0;
+    }
+
+    .sidebar div {
+        font-size: 0;
+    }
 }
