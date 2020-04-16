@@ -28,4 +28,20 @@
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
 }
+
+@media screen and (max-width: 600px) {
+  .dashboard-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .item1 {
+    all: unset;
+    width: 0;
+    height: 0;
+  }
+  .item2 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
 /*# sourceMappingURL=dashboard.css.map */
