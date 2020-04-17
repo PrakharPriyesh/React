@@ -12,11 +12,11 @@ function Sidebar(props) {
                 <img src={rpLogo} alt={rpLogo}/>
             </div>
             <div className="sidebar-dashboard">
-                <div>Dashboard</div>
+                <div className="sidebar-font1">Dashboard</div>
                 <img src={homeIcon} alt={homeIcon} />
             </div>
             <div className="sidebar-catalog">
-                <div>Product Catalog</div>
+                <div className="sidebar-font2">Product Catalog</div>
                 <img src={stackIcon} alt={stackIcon} />
             </div>
         </div>

@@ -85,8 +85,20 @@
     top: 0;
     left: 0;
   }
+  .sidebar-logo-container {
+    height: 9%;
+  }
   .sidebar div {
-    font-size: 20px;
+    font-size: 0px;
+  }
+  .sidebar-dashboard {
+    height: 10%;
+  }
+  .sidebar-catalog {
+    height: 10%;
+  }
+  .sidebar-catalog img {
+    top: 27%;
   }
 }
 /*# sourceMappingURL=sidebar.css.map */
