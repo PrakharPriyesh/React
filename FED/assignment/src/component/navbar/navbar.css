@@ -46,6 +46,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .navbar {
+    height: 3%;
+  }
   .navbar-icon-img {
     display: block;
   }
