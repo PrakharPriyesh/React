@@ -48,3 +48,17 @@
     color: rgb(158, 158, 158);
     border-top: 1px solid rgba(158, 158, 158, 0.6);
 }
+
+
+@media screen and (max-width:650px) {
+    .team-card {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2%;
+        height: 21%;
+    }
+
+    .team-card-icon {
+        top: 30%;
+    }
+}

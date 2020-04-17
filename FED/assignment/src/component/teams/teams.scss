@@ -19,3 +19,12 @@
     top: 25%;
     left: 2%;
 }
+
+
+@media screen and (max-width:650px) {
+    .team-card-container {
+        top: 15%;
+        left: 4%;
+        width: 92%;
+    }
+}
