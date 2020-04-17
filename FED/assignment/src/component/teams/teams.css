@@ -21,10 +21,16 @@
 }
 
 @media screen and (max-width: 650px) {
+  .teams-heading {
+    top: 2%;
+    left: 4%;
+    font-size: 15px;
+  }
   .team-card-container {
-    top: 15%;
+    top: 10%;
     left: 4%;
     width: 92%;
+    height: 90%;
   }
 }
 /*# sourceMappingURL=teams.css.map */

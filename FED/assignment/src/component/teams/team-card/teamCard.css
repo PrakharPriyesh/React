@@ -55,10 +55,19 @@
     width: 100%;
     margin-left: 0;
     margin-top: 2%;
-    height: 21%;
+    height: 25.5%;
+  }
+  .team-card-name {
+    font-size: 19px;
+    top: 8%;
+    left: 5%;
+    right: unset;
   }
   .team-card-icon {
-    top: 30%;
+    top: 26%;
+  }
+  .team-card-expense {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=teamCard.css.map */
