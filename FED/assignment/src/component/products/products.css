@@ -57,4 +57,21 @@
   background: transparent;
   /* Optional: just make scrollbar invisible */
 }
+
+@media screen and (max-width: 600px) {
+  .products {
+    top: 1.5%;
+  }
+  .products-heading {
+    top: 0%;
+    height: 2%;
+  }
+  .products-heading font {
+    top: 25%;
+    font-size: 15px;
+  }
+  .products-container {
+    top: 2%;
+  }
+}
 /*# sourceMappingURL=products.css.map */
