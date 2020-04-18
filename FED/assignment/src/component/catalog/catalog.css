@@ -33,6 +33,7 @@
   .catalog-container {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+    grid-auto-rows: 2223px;
   }
   .catalog-item1 {
     all: unset;
