@@ -1,21 +1,24 @@
 .sidebar {
-  position: relative;
+  position: fixed;
+  width: 0;
   height: 100%;
-  width: 100%;
-  background-color: white;
-  color: grey;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  z-index: 1;
+  top: 0;
+  left: 0;
   -webkit-box-shadow: 14px 0px 44px -19px #4f4f4f;
           box-shadow: 14px 0px 44px -19px #4f4f4f;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sidebar-logo-container {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 6%;
+  height: 10%;
   background-color: black;
   text-align: center;
+  top: 0%;
 }
 
 .sidebar-logo-container img {
@@ -30,18 +33,22 @@
 
 .sidebar-dashboard {
   position: relative;
-  height: 6%;
+  height: 10%;
+  width: 100%;
+  top: 10%;
 }
 
-.sidebar-dashboard div {
+.sidebar-dashboard font {
   position: absolute;
   text-align: left;
   height: 90%;
   width: 80%;
-  font-size: 18px;
+  font-size: 0;
   line-height: 74px;
   left: 10%;
   border-bottom: 1px solid #b8b8b8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sidebar-dashboard img {
@@ -54,19 +61,23 @@
 
 .sidebar-catalog {
   position: relative;
-  height: 6%;
+  height: 10%;
+  width: 100%;
+  top: 10%;
 }
 
-.sidebar-catalog div {
+.sidebar-catalog font {
   position: absolute;
   text-align: left;
   height: 90%;
   width: 80%;
-  font-size: 18px;
+  font-size: 0px;
   line-height: 65px;
   left: 10%;
   border: none;
   padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sidebar-catalog img {
@@ -74,7 +85,7 @@
   height: 30%;
   width: auto;
   right: 10%;
-  top: 32%;
+  top: 28%;
 }
 
 @media screen and (max-width: 550px) {

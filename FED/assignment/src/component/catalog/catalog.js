@@ -10,10 +10,8 @@ function Catalog(props) {
         <>
 
             <div className="catalog-container">
-                <div className="catalog-item1">
+                <div className="catalog-item">
                     <Sidebar />
-                </div>
-                <div className="catalog-item2">
                     <Navbar />
                     <Products />
                 </div>
