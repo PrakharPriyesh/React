@@ -1,11 +1,18 @@
-.team-card {
+.team-card-box {
     position: relative;
     display: inline-block;
-    width: 23%;
-    height: 85%;
-    margin-left: 1.5%;
-    background-color: white;
+    width: 25%;
+    height: 90%;
     text-align: center;
+}
+
+.team-card {
+    position: relative;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: white;
     box-shadow: 0px 0px 44px -19px rgba(79, 79, 79, 1);
 }
 

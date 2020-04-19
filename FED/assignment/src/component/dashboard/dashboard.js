@@ -20,7 +20,7 @@ function Dashboard(props) {
                     <ProcessingInformation />
                     <RecentReferrals />
                     <PaymentCards />
-                    {/* <Teams /> */}
+                    <Teams />
                 </div>
             </div>
         </>
