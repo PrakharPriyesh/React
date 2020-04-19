@@ -7,8 +7,9 @@ import './navbar.css';
 function Navbar(props) {
 
     const openSidebar = () => {
-        document.getElementsByClassName("sidebar")[0].style.width = "20%";
+        //document.getElementsByClassName("sidebar")[0].style.width = "20%";
         document.getElementsByClassName("sidebar")[0].style.display = "block";
+        document.getElementsByClassName("sidebar")[0].style.minWidth = "260px";
         document.getElementById("sidebar-img1").style.height = "26px";
         document.getElementById("sidebar-img2").style.height = "26px";
         document.getElementsByClassName("sidebar-font1")[0].style.fontSize = "20px";

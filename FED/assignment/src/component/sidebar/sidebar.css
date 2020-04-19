@@ -7,8 +7,8 @@
   -webkit-box-shadow: 14px 0px 44px -19px #4f4f4f;
           box-shadow: 14px 0px 44px -19px #4f4f4f;
   background-color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .sidebar-logo-container {
@@ -26,8 +26,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .sidebar-list {
@@ -37,19 +37,19 @@
 }
 
 .sidebar-list-item {
-  padding: 20px 40px;
+  padding: 20px;
 }
 
 .sidebar-list-item img {
   height: 0;
   float: right;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .sidebar-list-item font {
   font-size: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 /*# sourceMappingURL=sidebar.css.map */
