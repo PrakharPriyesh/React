@@ -38,7 +38,7 @@
   left: 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60px) {
   .recent-referrals-container {
     height: 11.74%;
   }

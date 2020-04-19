@@ -78,7 +78,7 @@
   right: 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60px) {
   .progress-card {
     width: 92%;
     margin-left: 4%;

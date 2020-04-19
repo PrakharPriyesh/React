@@ -4,7 +4,7 @@
   display: grid;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60px) {
   .dashboard-container {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
