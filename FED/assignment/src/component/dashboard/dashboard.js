@@ -18,8 +18,8 @@ function Dashboard(props) {
                     <Sidebar />
                     <Navbar />
                     <ProcessingInformation />
-                    {/* <RecentReferrals />
-                    <PaymentCards />
+                    {/* <RecentReferrals /> */}
+                    {/* <PaymentCards />
                     <Teams /> */}
                 </div>
             </div>

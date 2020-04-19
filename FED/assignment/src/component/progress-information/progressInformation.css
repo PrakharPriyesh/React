@@ -1,7 +1,6 @@
 .progress-information-container {
   width: 95%;
   margin: auto;
-  background-color: blue;
 }
 
 .progress-information-heading {
@@ -12,7 +11,6 @@
 
 .progress-card-container {
   width: 100%;
-  min-height: 100vh;
 }
 
 @media screen and (max-width: 600px) {
