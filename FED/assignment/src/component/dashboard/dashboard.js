@@ -19,8 +19,8 @@ function Dashboard(props) {
                     <Navbar />
                     <ProcessingInformation />
                     <RecentReferrals />
-                    {/* <PaymentCards />
-                    <Teams /> */}
+                    <PaymentCards />
+                    {/* <Teams /> */}
                 </div>
             </div>
         </>

@@ -1,12 +1,16 @@
+.card-details-box {
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+}
+
 .card-details {
     position: relative;
-    display: inline-block;
-    width: 27%;
+    width: 70%;
     height: 100%;
-    margin-left: 5%;
-    background-color: white;
+    margin: auto;
     box-shadow: 0px 0px 44px -19px rgba(79,79,79,1);
-    text-align: center;
 }
 
 .card-details img {
