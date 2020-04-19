@@ -1,6 +1,7 @@
 .sidebar {
   position: fixed;
-  width: 20%;
+  width: 0;
+  min-width: 0;
   height: 100%;
   z-index: 1;
   -webkit-box-shadow: 14px 0px 44px -19px #4f4f4f;
@@ -13,7 +14,6 @@
 .sidebar-logo-container {
   position: relative;
   background-color: black;
-  text-align: center;
   height: 10%;
   max-height: 76px;
 }
@@ -26,6 +26,8 @@
   left: 0;
   right: 0;
   margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sidebar-list {
@@ -39,36 +41,15 @@
 }
 
 .sidebar-list-item img {
-  height: 26px;
+  height: 0;
   float: right;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sidebar-list-item font {
-  font-size: 18px;
-}
-
-@media screen and (max-width: 550px) {
-  .sidebar {
-    width: 0%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-  }
-  .sidebar-logo-container {
-    height: 9%;
-  }
-  .sidebar div {
-    font-size: 0px;
-  }
-  .sidebar-dashboard {
-    height: 10%;
-  }
-  .sidebar-catalog {
-    height: 10%;
-  }
-  .sidebar-catalog img {
-    top: 27%;
-  }
+  font-size: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=sidebar.css.map */

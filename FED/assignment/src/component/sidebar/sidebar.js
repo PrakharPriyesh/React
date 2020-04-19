@@ -14,11 +14,11 @@ function Sidebar(props) {
             <ul className="sidebar-list">
                 <li className="sidebar-list-item">
                     <font className="sidebar-font1">Dashboard</font>
-                    <img src={homeIcon} alt={homeIcon} />
+                    <img id="sidebar-img1" src={homeIcon} alt={homeIcon} />
                 </li>
                 <li className="sidebar-list-item">
                     <font className="sidebar-font2">Product Catalog</font>
-                    <img src={stackIcon} alt={stackIcon} />
+                    <img id="sidebar-img2" src={stackIcon} alt={stackIcon} />
                 </li>
             </ul>
         </div>
