@@ -18,7 +18,7 @@ function Dashboard(props) {
                     <Sidebar />
                     <Navbar />
                     <ProcessingInformation />
-                    {/* <RecentReferrals /> */}
+                    <RecentReferrals />
                     {/* <PaymentCards />
                     <Teams /> */}
                 </div>
