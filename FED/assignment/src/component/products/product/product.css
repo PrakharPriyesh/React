@@ -1,7 +1,8 @@
 .product-card-box {
   display: inline-block;
   width: 33.11%;
-  height: 40%;
+  min-width: 375px;
+  height: 380px;
 }
 
 .product-card {
