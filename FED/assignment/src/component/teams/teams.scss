@@ -1,5 +1,4 @@
 .teams {
-    width: 100%;
     height: 330px;
 }
 
@@ -18,18 +17,27 @@
     margin: auto;
 }
 
-
-@media screen and (max-width:60px) {
-
-    .teams-heading {
-        top: 2%;
-        left: 4%;
-        font-size: 15px;
+@media screen and (max-width: 949px) {
+    .teams {
+        height: 560px;
     }
 
     .team-card-container {
-        top: 10%;
-        left: 4%;
+        width: 92%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .teams {
+        height: 800px;
+    }
+
+    .teams-heading {
+        padding-bottom: 25px;
+    }
+
+    .team-card-container {
         width: 92%;
         height: 90%;
     }
