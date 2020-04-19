@@ -13,17 +13,8 @@
     width: 100%
 }
 
-@media screen and (max-width: 60px) {
+@media screen and (max-width: 549px) {
     .progress-information-container font {
         font-size: 15px;
-    }
-    
-    .progress-card-container {
-        top: 10%;
-    }
-
-    .progress-information-container {
-        height: 24%;
-    }
-    
+    }    
 }

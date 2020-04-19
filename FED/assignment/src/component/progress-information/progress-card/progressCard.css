@@ -78,12 +78,12 @@
   right: 5%;
 }
 
-@media screen and (max-width: 60px) {
+@media screen and (max-width: 549px) {
+  .progress-card-box {
+    width: 100%;
+  }
   .progress-card {
-    width: 92%;
-    margin-left: 4%;
-    height: 23%;
-    margin-top: 2%;
+    width: 95%;
   }
   .progress-card-heading {
     font-size: 14px;
