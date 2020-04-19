@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Login from './component/login/login';
 import Dashboard from './component/dashboard/dashboard';
-import Catalog from './component/catalog/catalog'
+import Catalog from './component/catalog/catalog';
+import ProductDetails from './component/product-details/productDetails';
 import './App.css';
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/dashboard">
             <Dashboard />
+          </Route>
+          <Route path="/product-details">
+            <ProductDetails />
           </Route>
         </Switch>
       </Router>
