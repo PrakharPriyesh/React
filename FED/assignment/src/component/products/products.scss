@@ -20,29 +20,3 @@
 .products-container {
     min-height: 100vh;
 }
-
-@media screen and (max-width: 600px) {
-    .products {
-        top: 1.5%;
-        height: 94%;
-    }
-
-    .products-heading {
-        top: 1.5%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        height: 1%;
-        width: 85%;
-    }
-
-    .products-heading font {
-        top: 0;
-        font-size: 15px;
-    }
-
-    .products-container {
-        top: 3%;
-        height: 97%;
-    }
-}
