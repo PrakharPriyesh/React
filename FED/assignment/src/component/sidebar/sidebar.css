@@ -1,10 +1,8 @@
 .sidebar {
   position: fixed;
-  width: 0;
+  width: 20%;
   height: 100%;
   z-index: 1;
-  top: 0;
-  left: 0;
   -webkit-box-shadow: 14px 0px 44px -19px #4f4f4f;
           box-shadow: 14px 0px 44px -19px #4f4f4f;
   background-color: white;
@@ -13,12 +11,11 @@
 }
 
 .sidebar-logo-container {
-  position: absolute;
-  width: 100%;
-  height: 10%;
+  position: relative;
   background-color: black;
   text-align: center;
-  top: 0%;
+  height: 10%;
+  max-height: 76px;
 }
 
 .sidebar-logo-container img {
@@ -31,61 +28,23 @@
   margin: auto;
 }
 
-.sidebar-dashboard {
-  position: relative;
-  height: 10%;
-  width: 100%;
-  top: 10%;
-}
-
-.sidebar-dashboard font {
-  position: absolute;
-  text-align: left;
-  height: 90%;
-  width: 80%;
-  font-size: 0;
-  line-height: 74px;
-  left: 10%;
-  border-bottom: 1px solid #b8b8b8;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.sidebar-dashboard img {
-  position: absolute;
-  height: 30%;
-  width: auto;
-  right: 10%;
-  top: 30%;
-}
-
-.sidebar-catalog {
-  position: relative;
-  height: 10%;
-  width: 100%;
-  top: 10%;
-}
-
-.sidebar-catalog font {
-  position: absolute;
-  text-align: left;
-  height: 90%;
-  width: 80%;
-  font-size: 0px;
-  line-height: 65px;
-  left: 10%;
-  border: none;
+.sidebar-list {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
-.sidebar-catalog img {
-  position: absolute;
-  height: 30%;
-  width: auto;
-  right: 10%;
-  top: 28%;
+.sidebar-list-item {
+  padding: 20px 40px;
+}
+
+.sidebar-list-item img {
+  height: 26px;
+  float: right;
+}
+
+.sidebar-list-item font {
+  font-size: 18px;
 }
 
 @media screen and (max-width: 550px) {

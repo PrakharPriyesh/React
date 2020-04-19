@@ -9,16 +9,18 @@ function Sidebar(props) {
     return (
         <div className="sidebar">
             <div className="sidebar-logo-container">
-                <img src={rpLogo} alt={rpLogo}/>
+                <img src={rpLogo} alt={rpLogo} />
             </div>
-            <div className="sidebar-dashboard">
-                <font className="sidebar-font1">Dashboard</font>
-                <img src={homeIcon} alt={homeIcon} />
-            </div>
-            <div className="sidebar-catalog">
-                <font className="sidebar-font2">Product Catalog</font>
-                <img src={stackIcon} alt={stackIcon} />
-            </div>
+            <ul className="sidebar-list">
+                <li className="sidebar-list-item">
+                    <font className="sidebar-font1">Dashboard</font>
+                    <img src={homeIcon} alt={homeIcon} />
+                </li>
+                <li className="sidebar-list-item">
+                    <font className="sidebar-font2">Product Catalog</font>
+                    <img src={stackIcon} alt={stackIcon} />
+                </li>
+            </ul>
         </div>
     );
 }
