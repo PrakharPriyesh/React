@@ -4,7 +4,7 @@ import menuIcon from './../../asset/menu.png';
 import profilePhoto from './../../asset/avatar_one.jpg'
 import './navbar.css';
 
-function Navbar(props) {
+const Navbar = (props) => {
 
     const openSidebar = () => {
         //document.getElementsByClassName("sidebar")[0].style.width = "20%";

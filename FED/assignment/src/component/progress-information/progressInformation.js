@@ -3,7 +3,7 @@ import React from 'react';
 import ProgressCard from './progress-card/progressCard'
 import './progressInformation.css'
 
-function ProgressInformation(props) {
+const ProgressInformation = (props) => {
     return (
         <div className="progress-information-container">
             <div className="progress-information-heading">

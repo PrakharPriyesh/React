@@ -3,7 +3,7 @@ import React from 'react';
 import cardIcon from './../../../asset/bookmark.png';
 import './cardDetails.css';
 
-function CardDetails(props) {
+const CardDetails = (props) => {
     return (
         <div className="card-details-box">
             <div className="card-details">

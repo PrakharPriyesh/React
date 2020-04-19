@@ -3,7 +3,7 @@ import React from 'react';
 import Product from './product/product';
 import './products.css';
 
-function Products(props) {
+const Products = (props) => {
     return (
         <div className="products">
             <div className="products-heading">

@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './../navbar/navbar';
 import './productDetails.css';
 
-function ProductDetails(props) {
+const ProductDetails = (props) => {
     return (
         <div className="product-details">
             <div className="product-details-container">

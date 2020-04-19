@@ -3,7 +3,7 @@ import React from 'react';
 import TeamCard from './team-card/teamCard';
 import './teams.css';
 
-function Teams(props) {
+const Teams = (props) => {
     return (
         <div className="teams">
             <div className="teams-heading">YOUR TEAMS</div>

@@ -3,7 +3,7 @@ import React from 'react';
 import ReferralTable from './referral-table/referralTable';
 import './recentReferrals.css';
 
-function RecentReferrals(props) {
+const RecentReferrals = (props) => {
     return (
         <div className="recent-referrals-container">
             <div className="recent-referrals-card">

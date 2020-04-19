@@ -10,7 +10,7 @@ import PaymentCards from './../payment-cards/paymentCards';
 import Teams from './../teams/teams';
 
 
-function Dashboard(props) {
+const Dashboard = (props) => {
     return (
         <>
             <div className="dashboard-container">

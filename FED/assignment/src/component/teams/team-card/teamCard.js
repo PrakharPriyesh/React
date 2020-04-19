@@ -2,7 +2,7 @@ import React from 'react';
 
 import './teamCard.css'
 
-function TeamCard(props) {
+const TeamCard = (props) => {
     return (
         <div className="team-card-box">
             <div className="team-card">

@@ -5,7 +5,7 @@ import stackIcon from './../../asset/stack.png';
 import rpLogo from './../../asset/rp-logo.png';
 import './sidebar.css';
 
-function Sidebar(props) {
+const Sidebar = (props) => {
     return (
         <div className="sidebar">
             <div className="sidebar-logo-container">

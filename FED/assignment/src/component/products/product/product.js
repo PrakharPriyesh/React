@@ -3,7 +3,7 @@ import React from 'react';
 import productImg from './../../../asset/ecommerce/003.jpg'
 import './product.css'
 
-function Product(props) {
+const Product = (props) => {
     return (
         <div className="product-card-box">
             <div className="product-card">

@@ -3,7 +3,7 @@ import React from 'react';
 import CardDetails from './card-details/cardDetails';
 import './paymentCards.css';
 
-function PaymentCards(props) {
+const PaymentCards = (props) => {
     return (
         <div className="payment-cards">
             <div className="payment-cards-heading">
@@ -13,7 +13,7 @@ function PaymentCards(props) {
                 <CardDetails />
                 <CardDetails />
                 <CardDetails />
-            </div>            
+            </div>
         </div>
     );
 }

@@ -5,7 +5,7 @@ import Sidebar from './../sidebar/sidebar';
 import Products from './../products/products'
 import './catalog.css';
 
-function Catalog(props) {
+const Catalog = (props) => {
     return (
         <>
             <div className="catalog-container">

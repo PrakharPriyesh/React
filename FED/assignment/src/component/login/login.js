@@ -7,7 +7,7 @@ import rpLogo from './../../asset/rp-logo.png';
 
 // };
 
-function Login(props) {
+const Login = (props) => {
     return (
         <div className="login">
             <img className="rp-logo" src={rpLogo} alt={rpLogo}></img>
@@ -23,11 +23,11 @@ function Login(props) {
                 </div>
                 <div className="login-form">
                     <div className="login-form-username">
-                        Username <br/>
+                        Username <br />
                         <input type="text" placeholder="Email or Username"></input>
                     </div>
                     <div className="login-form-password">
-                        Password <br/>
+                        Password <br />
                         <input type="password" placeholder="Password"></input>
                     </div>
                     <div className="login-form-rememberme">
@@ -40,7 +40,7 @@ function Login(props) {
                 </div>
             </div>
             <div className="footer">
-            <font>&copy; 2020 RedPanda. All Rights Reserved</font>
+                <font>&copy; 2020 RedPanda. All Rights Reserved</font>
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './referralTable.css'
 
-function ReferralTable(props) {
+const ReferralTable = (props) => {
     return (
         <div className="referral-table">
             <table>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './progressCard.css'
 
-function ProgressCard(props) {
+const ProgressCard = (props) => {
 
     return (
         <div className="progress-card-box">
@@ -14,7 +14,7 @@ function ProgressCard(props) {
                     Profit
                 </div>
                 <div className="progress-card-value">
-                &#36;180M
+                    &#36;180M
                 </div>
                 <div className="progress-card-progress-bar">
                     <div className="progress-card-progress" style={{ width: "65%", height: "100%", backgroundColor: "dodgerblue" }}>
