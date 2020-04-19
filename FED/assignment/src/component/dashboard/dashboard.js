@@ -15,10 +15,8 @@ function Dashboard(props) {
         <>
 
             <div className="dashboard-container">
-                <div className="item1">
+                <div className="dashboard-item">
                     <Sidebar />
-                </div>
-                <div className="item2">
                     <Navbar />
                     <ProcessingInformation />
                     <RecentReferrals />
