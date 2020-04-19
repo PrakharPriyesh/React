@@ -8,7 +8,6 @@ import './catalog.css';
 function Catalog(props) {
     return (
         <>
-
             <div className="catalog-container">
                 <div className="catalog-item">
                     <Sidebar />

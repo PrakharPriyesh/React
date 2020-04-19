@@ -3,27 +3,29 @@
     width: 100%;
     display: grid;
     grid-template-columns: auto;
-    grid-auto-rows: 1200px;
+    //grid-auto-rows: 1200px;
 }
 
 .catalog-item {
     height: 100%;
+    grid-row: 1;
+    grid-column: 1;
 }
 
-@media screen and (max-width: 900px) {
+// @media screen and (max-width: 900px) {
 
-    .catalog-container {
-        grid-template-columns: auto;
-        grid-auto-rows: 2223px;
-    }
+//     .catalog-container {
+//         grid-template-columns: auto;
+//         grid-auto-rows: 2223px;
+//     }
 
-    .catalog-item1 {
-        all: unset;
-        width: 0;
-        height: 0;
-    }
+//     .catalog-item1 {
+//         all: unset;
+//         width: 0;
+//         height: 0;
+//     }
 
-    .catalog-item2 {
-        grid-column: 1;
-    }
-}
+//     .catalog-item2 {
+//         grid-column: 1;
+//     }
+// }
