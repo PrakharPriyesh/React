@@ -6,7 +6,10 @@ import './progressInformation.css'
 function ProgressInformation(props) {
     return (
         <div className="progress-information-container">
-            <font>PROGRESS INFORMATION</font>
+            <div className="progress-information-heading">
+                PROGRESS INFORMATION
+            </div>
+
             <div className="progress-card-container">
                 <ProgressCard />
                 <ProgressCard />

@@ -1,24 +1,11 @@
 .dashboard-container {
     height: 100%;
-    width: 100%;
     display: grid;
-    grid-auto-rows: 1200px;
-    grid-template-columns: auto;
-}
-
-.dashboard-container > div {
-    border-bottom: 0px solid black;
-}
-
-.dashboard-item {
-    grid-column: 1;
-    grid-row: 1;
 }
 
 @media screen and (max-width: 600px) {
-
     .dashboard-container {
         grid-template-columns: auto;
-        grid-auto-rows: 2223px;
+        //grid-auto-rows: 2223px;
     }
 }

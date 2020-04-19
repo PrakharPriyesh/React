@@ -1,22 +1,18 @@
 .progress-information-container {
-    position: relative;
-    width: 100%;
-    height: 23.5%;
+    width: 95%;
+    margin: auto;
+    background-color: blue;
 }
 
-.progress-information-container font {
-    position: absolute;
+.progress-information-heading {
     font-size: 16.5px;
-    font-weight: bolder;
-    top: 4%;
-    left: 4%;
+    font-weight: bold;
+    padding-top: 15px;
 }
 
 .progress-card-container {
     width: 100%;
-    height: 85%;
-    position: absolute;
-    top: 15%;
+    min-height: 100vh;
 }
 
 @media screen and (max-width: 600px) {

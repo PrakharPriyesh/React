@@ -1,29 +1,13 @@
 .dashboard-container {
   height: 100%;
-  width: 100%;
   display: -ms-grid;
   display: grid;
-  grid-auto-rows: 1200px;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-}
-
-.dashboard-container > div {
-  border-bottom: 0px solid black;
-}
-
-.dashboard-item {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
 }
 
 @media screen and (max-width: 600px) {
   .dashboard-container {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    grid-auto-rows: 2223px;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */
