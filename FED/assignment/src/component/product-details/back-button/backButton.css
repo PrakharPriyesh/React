@@ -1,0 +1,27 @@
+.back-button {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  color: dodgerblue;
+  padding: 15px 32px;
+  -webkit-box-shadow: 0px 0px 44px -19px #4f4f4f;
+          box-shadow: 0px 0px 44px -19px #4f4f4f;
+  border: none;
+}
+
+.back-button img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 17px;
+}
+
+.back-button font {
+  position: absolute;
+  font-weight: bold;
+  font-size: 16px;
+  top: 15px;
+  left: 40px;
+}
+/*# sourceMappingURL=backButton.css.map */
