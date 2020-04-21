@@ -17,9 +17,13 @@
             float: unset;
         }
     }
-    @media screen and (max-width: 949px) {
+    @media screen and (max-width: 549px) {
+        width: 85%;
         & img {
-            width: 25%;
+            margin: unset;
+            margin-top: 12px;
+            margin-left: 10px;
+            width: 22%;
         }
     }
 }
