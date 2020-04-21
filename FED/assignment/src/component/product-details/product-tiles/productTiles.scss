@@ -17,4 +17,9 @@
             float: unset;
         }
     }
+    @media screen and (max-width: 949px) {
+        & img {
+            width: 25%;
+        }
+    }
 }

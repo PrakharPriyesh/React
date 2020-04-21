@@ -20,4 +20,10 @@
     float: unset;
   }
 }
+
+@media screen and (max-width: 949px) {
+  .product-tiles img {
+    width: 25%;
+  }
+}
 /*# sourceMappingURL=productTiles.css.map */
