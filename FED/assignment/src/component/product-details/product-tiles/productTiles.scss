@@ -1,0 +1,20 @@
+.product-tiles {
+    width: 85%;
+    margin: auto;
+
+    & img {
+        float: left;
+        width: 25%;
+        margin-right: 16px;
+        margin-top: 16px;
+        border: 1px solid rgba(71, 71, 71, 0.2);
+    }
+
+    @media screen and (max-width: 949px) {
+        width: 90%;
+        & img {
+            width: 12%;
+            float: unset;
+        }
+    }
+}

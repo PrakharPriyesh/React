@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ProductTiles from './../product-tiles/productTiles';
 import InformationTab from './../information-tab/informationTab';
 import productImg from './../../../asset/ecommerce/004.jpg';
 import './productDetailsContainer.css';
@@ -14,6 +15,7 @@ const ProductDetailsContainer = (props) => {
                 <div className="pdc-c1-product-img">
                     <img src={productImg} alt={productImg} />
                 </div>
+                <ProductTiles />
             </div>
             <div className="pdc-c2">
                 <div className="pdc-c2-tags"></div>
