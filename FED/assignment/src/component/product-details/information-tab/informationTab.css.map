@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,QAAQ,EAAE,QAAQ;CAarB;;AAXI,AAAD,wBAAS,CAAC;EACN,aAAa,EAAE,GAAG,CAAC,KAAK,CAAC,wBAAwB;EACjD,MAAM,EAAE,IAAI;CAQf;;AAVA,AAGG,wBAHK,CAGH,MAAM,CAAC;EACL,GAAG,EAAE,KAAK;EACV,MAAM,EAAE,IAAI;EACZ,YAAY,EAAE,IAAI;EAClB,KAAK,EAAE,OAAe;EACtB,aAAa,EAAE,oBAAoB;CACtC",
+    "sources": [
+        "informationTab.scss"
+    ],
+    "names": [],
+    "file": "informationTab.css"
+}

@@ -1,18 +1,6 @@
-@mixin full-height-width {
-    width: 100%;
-    height: 100%;
-}
 .product-details {
-    &-container {
-        @include full-height-width;
-
-        &-button {
-            margin-top: 20px;
-            margin-left: 2%;
-        }
-        &-body {
-            background-color: blue;
-        }
+    &-button {
+        margin-top: 20px;
+        margin-left: 2%;
     }
-    @include full-height-width;
 }

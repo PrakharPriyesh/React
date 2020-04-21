@@ -2,19 +2,17 @@ import React from 'react';
 
 import Navbar from './../navbar/navbar';
 import BackButton from './back-button/backButton';
+import ProductDetailsContainer from './product-details-container/productDetailsContainer';
 import './productDetails.css';
 
 const ProductDetails = (props) => {
     return (
         <div className="product-details">
-            <div className="product-details-container">
-                <Navbar />
-                <div className="product-details-container-button">
-                    <BackButton />
-                </div>
-                <div className="product-details-container-body">
-                </div>
+            <Navbar />
+            <div className="product-details-button">
+                <BackButton />
             </div>
+            <ProductDetailsContainer />
         </div>
     );
 }

@@ -1,19 +1,5 @@
-.product-details {
-  width: 100%;
-  height: 100%;
-}
-
-.product-details-container {
-  width: 100%;
-  height: 100%;
-}
-
-.product-details-container-button {
+.product-details-button {
   margin-top: 20px;
   margin-left: 2%;
-}
-
-.product-details-container-body {
-  background-color: blue;
 }
 /*# sourceMappingURL=productDetails.css.map */
