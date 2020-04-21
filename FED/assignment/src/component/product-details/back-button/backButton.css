@@ -24,4 +24,20 @@
   top: 15px;
   left: 40px;
 }
+
+@media screen and (max-width: 949px) {
+  .back-button {
+    width: 90px;
+    height: 45px;
+  }
+  .back-button img {
+    top: 15px;
+    left: 10px;
+    height: 15px;
+  }
+  .back-button font {
+    top: 14px;
+    left: 35px;
+  }
+}
 /*# sourceMappingURL=backButton.css.map */
