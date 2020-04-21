@@ -18,16 +18,23 @@
     &-c1 {
         display: inline-block;
         width: 33.33%;
+        min-width: 301px;
         vertical-align: top;
         text-align: center;
 
         &-product-img {
             width: 85%;
             margin: auto;
-            border: 1px solid black;
+            border: 1px solid rgba(71, 71, 71, 0.2);
 
             & img {
                 width: 80%;
+            }
+        }
+        @media screen and (max-width: 949px) {
+            width: 100%;
+            &-product-img {
+                width: 50%;
             }
         }
     }
@@ -119,6 +126,10 @@
         &-tabs-container {
             margin-bottom: 20px;
             padding: 20px;
+        }
+
+        @media screen and (max-width: 949px) {
+            width: 100%;
         }
     }
 }

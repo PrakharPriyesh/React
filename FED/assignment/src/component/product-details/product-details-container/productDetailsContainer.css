@@ -20,6 +20,7 @@
 .pdc-c1 {
   display: inline-block;
   width: 33.33%;
+  min-width: 301px;
   vertical-align: top;
   text-align: center;
 }
@@ -27,11 +28,20 @@
 .pdc-c1-product-img {
   width: 85%;
   margin: auto;
-  border: 1px solid black;
+  border: 1px solid rgba(71, 71, 71, 0.2);
 }
 
 .pdc-c1-product-img img {
   width: 80%;
+}
+
+@media screen and (max-width: 949px) {
+  .pdc-c1 {
+    width: 100%;
+  }
+  .pdc-c1-product-img {
+    width: 50%;
+  }
 }
 
 .pdc-c2 {
@@ -122,5 +132,11 @@
 .pdc-c2-tabs-container {
   margin-bottom: 20px;
   padding: 20px;
+}
+
+@media screen and (max-width: 949px) {
+  .pdc-c2 {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=productDetailsContainer.css.map */
