@@ -116,6 +116,10 @@
   width: 95%;
 }
 
+.pdc-c2-about-seller :hover {
+  cursor: pointer;
+}
+
 .pdc-c2-about-seller font {
   color: dodgerblue;
   text-decoration: underline;
