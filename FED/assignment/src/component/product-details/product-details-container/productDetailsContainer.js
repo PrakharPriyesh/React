@@ -7,6 +7,11 @@ import Modal from './../modal/modal';
 import './productDetailsContainer.css';
 
 const ProductDetailsContainer = (props) => {
+
+    const aboutSeller = () => {
+        document.getElementById('modal-view').style.display = "initial";
+    }
+
     return (
         <div className="pdc">
             <Modal />
@@ -39,8 +44,8 @@ const ProductDetailsContainer = (props) => {
                     <div>M</div>
                     <div>XL</div>
                 </div>
-                <div className="pdc-c2-about-seller">
-                    <font>About Seller</font>
+                <div className="pdc-c2-about-seller" >
+                    <font onClick={aboutSeller}>About Seller</font>
                 </div>
                 <div className="pdc-c2-tabs-container">
                     <InformationTab />
