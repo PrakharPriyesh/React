@@ -1,0 +1,78 @@
+.modal {
+  display: initial;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.418);
+  text-align: center;
+}
+
+.modal-card {
+  position: relative;
+  top: 20px;
+  margin: auto;
+  background-color: white;
+  width: 30%;
+  padding: 30px;
+}
+
+.modal-card-heading {
+  width: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  color: dodgerblue;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-card-description {
+  margin: auto;
+  padding: 15px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.418);
+  border-top: 1px solid rgba(128, 128, 128, 0.418);
+  text-align: justify;
+  font-size: 14px;
+}
+
+.modal-card-button {
+  text-align: right;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.modal-card-button button {
+  all: unset;
+  border: 1px solid rgba(128, 128, 128, 0.418);
+  padding: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-card {
+    width: 40%;
+  }
+  .modal-card-button {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 949px) {
+  .modal-card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .modal-card {
+    width: 90%;
+    padding: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=modal.css.map */

@@ -3,11 +3,13 @@ import React from 'react';
 import ProductTiles from './../product-tiles/productTiles';
 import InformationTab from './../information-tab/informationTab';
 import productImg from './../../../asset/ecommerce/004.jpg';
+import Modal from './../modal/modal';
 import './productDetailsContainer.css';
 
 const ProductDetailsContainer = (props) => {
     return (
         <div className="pdc">
+            <Modal />
             <div className="pdc-heading">
                 <font>PRODUCT DETAILS</font>
             </div>
