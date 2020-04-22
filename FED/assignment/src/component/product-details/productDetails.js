@@ -4,6 +4,7 @@ import Navbar from './../navbar/navbar';
 import Sidebar from './../sidebar/sidebar';
 import BackButton from './back-button/backButton';
 import ProductDetailsContainer from './product-details-container/productDetailsContainer';
+import Footer from './../footer/footer';
 import './productDetails.css';
 
 const ProductDetails = (props) => {
@@ -15,6 +16,7 @@ const ProductDetails = (props) => {
                 <BackButton />
             </div>
             <ProductDetailsContainer />
+            <Footer />
         </div>
     );
 }

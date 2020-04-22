@@ -1,0 +1,25 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  margin: auto;
+  margin-top: 25px;
+  min-height: 150px;
+  width: 95%;
+  background-color: rgba(203, 205, 214, 0.856);
+  color: white;
+}
+
+.footer-heading {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #424649;
+}
+
+.footer-body {
+  width: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #424649;
+}
+/*# sourceMappingURL=footer.css.map */
