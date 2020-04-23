@@ -1,13 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 //import PropTypes from 'prop-types';
 import './login.css';
 import rpLogo from './../../asset/rp-logo.png';
+import { Redirect } from 'react-router';
 
 // Login.propTypes = {
 
 // };
 
-const Login = (props) => {
+const Login = () => {
+
+    const [loginState, changeLoginState] = useState(false);
+
+    const onSignIn = () => {
+        const userName = document.getElementById('login-username').value
+        const userPass = document.getElementById('login-password').value
+        
+        if (userName === 'a' || userName === "b") {
+            if (userPass === "b") {
+                localStorage.setItem("username", userName);
+                localStorage.setItem("userpass", userPass);
+                changeLoginState(!loginState)
+            }
+        }
+    }
+
+    if (loginState && localStorage.getItem("username")) {
+        return (
+            <Redirect to="/dashboard" />
+        )
+    }
+
     return (
         <div className="login">
             <img className="rp-logo" src={rpLogo} alt={rpLogo}></img>
@@ -24,18 +47,18 @@ const Login = (props) => {
                 <div className="login-form">
                     <div className="login-form-username">
                         Username <br />
-                        <input type="text" placeholder="Email or Username"></input>
+                        <input id="login-username" type="text" placeholder="Email or Username"></input>
                     </div>
                     <div className="login-form-password">
                         Password <br />
-                        <input type="password" placeholder="Password"></input>
+                        <input id="login-password" type="password" placeholder="Password"></input>
                     </div>
                     <div className="login-form-rememberme">
                         <div>Remember Me</div>
                         <input type="checkbox"></input>
                     </div>
                     <div className="login-form-button">
-                        <button>Sign In</button>
+                        <button onClick={onSignIn}>Sign In</button>
                     </div>
                 </div>
             </div>
