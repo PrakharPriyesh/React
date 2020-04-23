@@ -15,12 +15,21 @@ const Login = () => {
     const onSignIn = () => {
         const userName = document.getElementById('login-username').value
         const userPass = document.getElementById('login-password').value
-        
+        const check = document.getElementById('login-checkbox').value
         if (userName === 'a' || userName === "b") {
-            if (userPass === "b") {
-                localStorage.setItem("username", userName);
-                localStorage.setItem("userpass", userPass);
-                changeLoginState(!loginState)
+            if (check === "on") {
+                if (userPass === "b") {
+                    localStorage.setItem("username", userName);
+                    localStorage.setItem("userpass", userPass);
+                    changeLoginState(!loginState)
+                }
+            }
+            else {
+                if (userPass === "b") {
+                    sessionStorage.setItem("username", userName);
+                    sessionStorage.setItem("userpass", userPass);
+                    changeLoginState(!loginState)
+                }
             }
         }
     }
@@ -55,7 +64,7 @@ const Login = () => {
                     </div>
                     <div className="login-form-rememberme">
                         <div>Remember Me</div>
-                        <input type="checkbox"></input>
+                        <input id="login-checkbox" type="checkbox"></input>
                     </div>
                     <div className="login-form-button">
                         <button onClick={onSignIn}>Sign In</button>
