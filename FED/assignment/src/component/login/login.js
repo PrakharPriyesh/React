@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './login.css';
 import rpLogo from './../../asset/rp-logo.png';
 import { Redirect } from 'react-router';
+import Footer from './../footer/footer';
 
 // Login.propTypes = {
 
@@ -42,8 +43,10 @@ const Login = () => {
 
     return (
         <div className="login">
-            <img className="rp-logo" src={rpLogo} alt={rpLogo}></img>
-            <div className="login-heading">
+            <div className="login-rp-logo">
+                <img src={rpLogo} alt={rpLogo} />
+            </div>
+            <div className="login-page-heading">
                 WELCOME TO REDPANDA UI HTML - CSS BASIC FED TEMPLATE
             </div>
             <div className="login-description">
@@ -53,26 +56,26 @@ const Login = () => {
                 <div className="login-card-heading">
                     PLEASE LOG IN
                 </div>
-                <div className="login-form">
-                    <div className="login-form-username">
+                <div className="login-card-form">
+                    <div className="login-card-form-username">
                         Username <br />
                         <input id="login-username" type="text" placeholder="Email or Username"></input>
                     </div>
-                    <div className="login-form-password">
+                    <div className="login-card-form-password">
                         Password <br />
                         <input id="login-password" type="password" placeholder="Password"></input>
                     </div>
-                    <div className="login-form-rememberme">
-                        <div>Remember Me</div>
-                        <input id="login-checkbox" type="checkbox"></input>
+                    <div className="login-card-form-rememberme">
+                        <span><input id="login-checkbox" type="checkbox"></input>Remember Me</span>
                     </div>
-                    <div className="login-form-button">
+                    <div className="login-card-form-button">
                         <button onClick={onSignIn}>Sign In</button>
                     </div>
                 </div>
+                
             </div>
-            <div className="footer">
-                <font>&copy; 2020 RedPanda. All Rights Reserved</font>
+            <div className="login-footer">
+                &copy; 2020 RedPanda. All Rights Reserved
             </div>
         </div>
     );
