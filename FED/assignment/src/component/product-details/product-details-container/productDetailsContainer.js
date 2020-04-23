@@ -3,6 +3,7 @@ import React from 'react';
 import ProductTiles from './../product-tiles/productTiles';
 import InformationTab from './../information-tab/informationTab';
 import productImg from './../../../asset/ecommerce/004.jpg';
+import ProductTags from './../product-tags/productTags';
 import Modal from './../modal/modal';
 import './productDetailsContainer.css';
 
@@ -25,7 +26,9 @@ const ProductDetailsContainer = (props) => {
                 <ProductTiles />
             </div>
             <div className="pdc-c2">
-                <div className="pdc-c2-tags"></div>
+                <div className="pdc-c2-tags">
+                    <ProductTags textArr={["Chair", "Product", "Catalog", "With Background", "white"]} />
+                </div>
                 <div className="pdc-c2-product-name">
                     <font>Beautiful Chair for Kids</font>
                 </div>

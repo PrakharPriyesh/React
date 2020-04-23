@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,OAAO,EAAE,YAAY;EACrB,UAAU,EAAE,GAAG;EACf,YAAY,EAAE,IAAI;EAClB,gBAAgB,EAAE,OAAkB;EACpC,KAAK,EAAE,OAAe;EACtB,SAAS,EAAE,yDAAyD;CAKvE;;AAHI,AAAD,sBAAW,CAAC;EACR,OAAO,EAAE,iBAAiB;CAC7B;;AAGL,AAAA,kBAAkB,CAAC;EACf,SAAS,EAAE,sDAAsD;CACpE;;AAED,AAAA,iBAAiB,CAAC;EACd,SAAS,EAAE,4CAA4C;CAC1D",
+    "sources": [
+        "productTags.scss"
+    ],
+    "names": [],
+    "file": "productTags.css"
+}
