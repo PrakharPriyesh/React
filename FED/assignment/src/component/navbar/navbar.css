@@ -21,8 +21,29 @@
   position: relative;
   float: right;
   height: 100%;
-  width: 8%;
+  width: 100px;
   color: #afafaf;
+}
+
+.navbar-profile-container-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 75px;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar-profile-container-dropdown-content button {
+  padding: 12px 16px;
+  width: 100px;
+  text-align: center;
+  border: 1px solid rgba(79, 79, 79, 0.2);
+}
+
+.navbar-profile-container:hover .navbar-profile-container-dropdown-content {
+  display: block;
 }
 
 .navbar-profile-container img {
@@ -42,24 +63,5 @@
   right: 25px;
   top: 40%;
   font-size: small;
-}
-
-@media screen and (max-width: 60px) {
-  .navbar {
-    height: 3%;
-  }
-  .navbar-icon-img {
-    display: block;
-  }
-  .navbar-profile-container {
-    width: 25%;
-    border: 0px solid black;
-  }
-  .navbar-profile-container img {
-    right: 40%;
-  }
-  .navbar-profile-container font {
-    right: 15%;
-  }
 }
 /*# sourceMappingURL=navbar.css.map */
