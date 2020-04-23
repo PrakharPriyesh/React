@@ -11,7 +11,7 @@ const InformationTab = (props) => {
         const descriptionButton = document.getElementById('information-tab-button1');
         const informationButton = document.getElementById('information-tab-button2');
         
-        if (event.target.id == 'information-tab-button1') {
+        if (event.target.id === 'information-tab-button1') {
             description.style.display = "none";
             information.style.display = "initial";
             descriptionButton.style.borderBottom = "3px solid dodgerblue";
