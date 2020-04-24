@@ -1,13 +1,1 @@
-.dashboard-container {
-  height: 100%;
-  display: -ms-grid;
-  display: grid;
-}
-
-@media screen and (max-width: 60px) {
-  .dashboard-container {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-}
-/*# sourceMappingURL=dashboard.css.map */
+/* No CSS *//*# sourceMappingURL=dashboard.css.map */
