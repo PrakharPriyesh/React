@@ -51,8 +51,8 @@
         padding: 25px;
         margin: auto auto 50px auto;
         background-color: white;
-        border-radius: 15px;
         text-align: left;
+        box-shadow: 0px 0px 44px -19px rgb(59, 59, 59);
 
         &-heading {
             font-size: 20px;
@@ -139,12 +139,13 @@
         }
 
         &-page-heading {
-            width: 95%;
+            width: 90%;
+            padding: unset;
         }
 
         &-description {
-            width: 90%;
-            margin-bottom: unset;
+            width: 85%;
+            margin: auto;
         }
 
         &-card {

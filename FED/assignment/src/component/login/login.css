@@ -38,8 +38,9 @@
   padding: 25px;
   margin: auto auto 50px auto;
   background-color: white;
-  border-radius: 15px;
   text-align: left;
+  -webkit-box-shadow: 0px 0px 44px -19px #3b3b3b;
+          box-shadow: 0px 0px 44px -19px #3b3b3b;
 }
 
 .login-card-heading {
@@ -136,11 +137,12 @@
     width: 150px;
   }
   .login-page-heading {
-    width: 95%;
+    width: 90%;
+    padding: unset;
   }
   .login-description {
-    width: 90%;
-    margin-bottom: unset;
+    width: 85%;
+    margin: auto;
   }
   .login-card {
     width: 75%;
