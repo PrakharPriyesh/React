@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import menuIcon from './../../asset/menu.png';
 import profilePhoto from './../../asset/avatar_one.jpg'
 import './navbar.css';
+import { Redirect } from 'react-router';
 
 const Navbar = (props) => {
+
+    const [loginState, changeLoginState] = useState(true)
+
     const openSidebar = () => {
         document.getElementsByClassName("sidebar")[0].style.display = "block";
         document.getElementsByClassName("sidebar")[0].style.minWidth = "260px";
@@ -29,6 +33,13 @@ const Navbar = (props) => {
     const logOutHandler = (e) => {
         localStorage.removeItem("username");
         localStorage.removeItem("userpass");
+        changeLoginState(false)
+    }
+
+    if (localStorage.getItem("username") === null) {
+        return (
+            <Redirect to="login" />
+        )
     }
 
     return (
