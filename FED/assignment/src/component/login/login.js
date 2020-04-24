@@ -16,9 +16,9 @@ const Login = () => {
     const onSignIn = () => {
         const userName = document.getElementById('login-username').value
         const userPass = document.getElementById('login-password').value
-        const check = document.getElementById('login-checkbox').value
+        const check = document.getElementById('login-checkbox').checked
         if (userName === 'a' || userName === "b") {
-            if (check === "on") {
+            if (check) {
                 if (userPass === "b") {
                     localStorage.setItem("username", userName);
                     localStorage.setItem("userpass", userPass);
@@ -26,7 +26,7 @@ const Login = () => {
                 }
             }
             else {
-                if (userPass === "b") {
+                if (userName === 'a' || userName === "b") {
                     sessionStorage.setItem("username", userName);
                     sessionStorage.setItem("userpass", userPass);
                     changeLoginState(!loginState)
@@ -35,6 +35,11 @@ const Login = () => {
         }
     }
 
+    if (loginState && sessionStorage.getItem("username")) {
+        return (
+            <Redirect to="/dashboard" />
+        )
+    }
     if (loginState && localStorage.getItem("username")) {
         return (
             <Redirect to="/dashboard" />
@@ -72,7 +77,7 @@ const Login = () => {
                         <button onClick={onSignIn}>Sign In</button>
                     </div>
                 </div>
-                
+
             </div>
             <div className="login-footer">
                 &copy; 2020 RedPanda. All Rights Reserved

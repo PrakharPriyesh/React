@@ -29,14 +29,18 @@ const Navbar = (props) => {
             document.getElementById('sidebar-list-catalog').style.borderLeft = "10px solid dodgerblue"
         }
     }
-
     const logOutHandler = (e) => {
         localStorage.removeItem("username");
         localStorage.removeItem("userpass");
-        changeLoginState(false)
+        sessionStorage.removeItem("username");
+        sessionStorage.removeItem("userpass");
+        changeLoginState(!loginState)
     }
+    const checkLogin = localStorage.getItem("username") || sessionStorage.getItem("username");
+    //|| sessionStorage.getItem("username") === null
+    console.log(checkLogin, "check")
 
-    if (localStorage.getItem("username") === null) {
+    if (!checkLogin) {
         return (
             <Redirect to="login" />
         )
