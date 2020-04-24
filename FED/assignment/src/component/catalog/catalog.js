@@ -7,15 +7,13 @@ import './catalog.css';
 
 const Catalog = (props) => {
     return (
-        <>
-            <div className="catalog-container">
-                <div className="catalog-item">
-                    <Sidebar />
-                    <Navbar />
-                    <Products />
-                </div>
+        <div className="catalog-container">
+            <div className="catalog-item">
+                <Sidebar />
+                <Navbar />
+                <Products />
             </div>
-        </>
+        </div>
     );
 }
 
