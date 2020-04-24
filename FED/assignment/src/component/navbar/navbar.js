@@ -10,8 +10,20 @@ const Navbar = (props) => {
         document.getElementsByClassName("sidebar")[0].style.minWidth = "260px";
         document.getElementById("sidebar-img1").style.height = "26px";
         document.getElementById("sidebar-img2").style.height = "26px";
-        document.getElementsByClassName("sidebar-font1")[0].style.fontSize = "20px";
-        document.getElementsByClassName("sidebar-font2")[0].style.fontSize = "20px";
+        document.getElementById("sidebar-font1").style.fontSize = "20px";
+        document.getElementById("sidebar-font2").style.fontSize = "20px";
+        const url = window.location.href;
+
+        if (url === "http://localhost:3000/dashboard") {
+            document.getElementById('sidebar-list-dashboard').style.borderLeft = "10px solid dodgerblue"
+            document.getElementById('sidebar-list-catalog').style.borderLeft = "0px solid dodgerblue"
+
+        }
+
+        if (url === "http://localhost:3000/catalog") {
+            document.getElementById('sidebar-list-dashboard').style.borderLeft = "0px solid dodgerblue"
+            document.getElementById('sidebar-list-catalog').style.borderLeft = "10px solid dodgerblue"
+        }
     }
 
     const logOutHandler = (e) => {
