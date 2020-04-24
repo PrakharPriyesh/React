@@ -2,7 +2,7 @@ import React from 'react';
 
 import ProductTiles from './../product-tiles/productTiles';
 import InformationTab from './../information-tab/informationTab';
-import productImg from './../../../asset/ecommerce/004.jpg';
+import productImg from './../../../asset/ecommerce/002.jpg';
 import ProductTags from './../product-tags/productTags';
 import Modal from './../modal/modal';
 import './productDetailsContainer.css';

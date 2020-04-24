@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import productImg from './../../../asset/ecommerce/003.jpg'
+import productImg from './../../../asset/ecommerce/002.jpg'
 import './product.css'
+import { Redirect } from 'react-router';
 
 const Product = (props) => {
+
+    const [clickStatus, clickStatusHandler] = useState(false)
+
+    if (clickStatus) {
+        return (
+            <Redirect to="product-details" />
+        )
+    }
+
+
+
     return (
-        <div className="product-card-box">
+        <div className="product-card-box" onClick={() => clickStatusHandler(true)}>
             <div className="product-card">
                 <img className="product-card-img" src={productImg} alt={productImg} />
                 <div className="product-card-new-tag">
