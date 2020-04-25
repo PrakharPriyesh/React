@@ -1,22 +1,20 @@
 .products {
     width: 95%;
-    margin: auto;
-    margin-top: 2%;
+    margin: 2% auto auto auto;
     box-shadow: 0px 0px 44px -19px rgba(79, 79, 79, 1);
     background-color: white;
-}
 
-.products-heading {
-    margin: auto;
-    width: 95%;
-    padding-top: 20px;
-}
+    &-heading {
+        margin: auto;
+        padding: 20px 0px 0px 25px;
+    }
 
-.products-heading font {
-    font-size: 16px;
-    font-weight: bold;
-}
+    &-heading font {
+        font-size: 16px;
+        font-weight: bold;
+    }
 
-.products-container {
-    min-height: 100vh;
+    &-container {
+        min-height: 100vh;
+    }
 }

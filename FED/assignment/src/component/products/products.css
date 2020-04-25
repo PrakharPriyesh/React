@@ -1,7 +1,6 @@
 .products {
   width: 95%;
-  margin: auto;
-  margin-top: 2%;
+  margin: 2% auto auto auto;
   -webkit-box-shadow: 0px 0px 44px -19px #4f4f4f;
           box-shadow: 0px 0px 44px -19px #4f4f4f;
   background-color: white;
@@ -9,8 +8,7 @@
 
 .products-heading {
   margin: auto;
-  width: 95%;
-  padding-top: 20px;
+  padding: 20px 0px 0px 25px;
 }
 
 .products-heading font {
