@@ -17,8 +17,8 @@ const Product = (props) => {
 
 
     return (
-        <div className="product-card-box" onClick={() => clickStatusHandler(true)}>
-            <div className="product-card">
+        <div className="product-card-box">
+            <div className="product-card" onClick={() => clickStatusHandler(true)}>
                 <img className="product-card-img" src={productImg} alt={productImg} />
                 <div className="product-card-new-tag">
                 </div>
