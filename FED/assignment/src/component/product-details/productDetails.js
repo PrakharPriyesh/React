@@ -8,6 +8,15 @@ import Footer from './../footer/footer';
 import './productDetails.css';
 
 const ProductDetails = (props) => {
+
+    const scrollTop = () => {
+        window.scrollTo({
+            top: 0,
+        });
+    }
+
+    scrollTop()
+
     return (
         <div className="product-details">
             <Navbar />
