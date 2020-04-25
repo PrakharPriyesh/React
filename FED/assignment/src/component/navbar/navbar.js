@@ -37,8 +37,6 @@ const Navbar = (props) => {
         changeLoginState(!loginState)
     }
     const checkLogin = localStorage.getItem("username") || sessionStorage.getItem("username");
-    //|| sessionStorage.getItem("username") === null
-    console.log(checkLogin, "check")
 
     if (!checkLogin) {
         return (
