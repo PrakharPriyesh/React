@@ -1,25 +1,25 @@
 .payment-cards {
     height: 350px;
-}
 
-.payment-cards-heading {
-    padding: 20px;
-    margin-left: 1%;
-    font-size: 16.5px;
-    font-weight: bold;
-}
+    &-heading {
+        padding: 20px;
+        margin-left: 1%;
+        font-size: 16.5px;
+        font-weight: bold;
+    }
 
-.payment-cards-card-details-container {
-    width: 92%;
-    height: 80%;
-    margin: auto;
+    &-card-details-container {
+        width: 92%;
+        height: 80%;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 549px) {
     .payment-cards {
         height: 910px;
-    }
-    .payment-cards-card-details-container {
-        height: 93%;
+        &-card-details-container {
+            height: 93%;
+        }
     }
 }
