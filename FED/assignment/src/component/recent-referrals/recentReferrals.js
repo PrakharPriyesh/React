@@ -7,13 +7,13 @@ const RecentReferrals = (props) => {
     return (
         <div className="recent-referrals-container">
             <div className="recent-referrals-card">
-                <div className="recent-referrals-heading">
+                <div className="recent-referrals-card-heading">
                     RECENT REFERRALS
             </div>
-                <div className="recent-referrals-description">
+                <div className="recent-referrals-card-description">
                     Block with important Recent Referrals information
             </div>
-                <div className="recent-referrals-table-container">
+                <div className="recent-referrals-card-table-container">
                     <ReferralTable />
                 </div>
             </div>
