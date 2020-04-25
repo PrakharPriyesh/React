@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
-//import PropTypes from 'prop-types';
 import './login.css';
 import rpLogo from './../../asset/rp-logo.png';
 import { Redirect } from 'react-router';
-import Footer from './../footer/footer';
-
-// Login.propTypes = {
-
-// };
 
 const Login = () => {
 
