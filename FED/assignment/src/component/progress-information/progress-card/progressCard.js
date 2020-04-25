@@ -2,7 +2,7 @@ import React from 'react';
 
 import './progressCard.css'
 
-const ProgressCard = (props) => {
+const ProgressCard = ({ bgColor }) => {
 
     return (
         <div className="progress-card-box">
@@ -13,11 +13,11 @@ const ProgressCard = (props) => {
                 <div className="progress-card-details">
                     Profit
                 </div>
-                <div className="progress-card-value">
+                <div className="progress-card-value" style={{ color: bgColor }}>
                     &#36;180M
                 </div>
                 <div className="progress-card-progress-bar">
-                    <div className="progress-card-progress" style={{ width: "65%", height: "100%", backgroundColor: "dodgerblue" }}>
+                    <div id="progress-card-current-progress" className="progress-card-progress" style={{ width: "70%", height: "100%", backgroundColor: bgColor }}>
                     </div>
                 </div>
                 <div className="progress-card-info">
