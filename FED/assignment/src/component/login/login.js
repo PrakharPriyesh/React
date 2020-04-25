@@ -29,12 +29,12 @@ const Login = () => {
         }
     }
 
-    if (loginState && sessionStorage.getItem("username")) {
+    if (sessionStorage.getItem("username")) {
         return (
             <Redirect to="/dashboard" />
         )
     }
-    if (loginState && localStorage.getItem("username")) {
+    if (localStorage.getItem("username")) {
         return (
             <Redirect to="/dashboard" />
         )
