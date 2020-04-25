@@ -21,9 +21,7 @@ const ProductDetails = (props) => {
         <div className="product-details">
             <Navbar />
             <Sidebar />
-            <div className="product-details-button">
-                <BackButton />
-            </div>
+            <BackButton />
             <ProductDetailsContainer />
             <Footer />
         </div>

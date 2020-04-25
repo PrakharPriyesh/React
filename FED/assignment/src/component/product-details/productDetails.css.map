@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AACK,AAAD,uBAAQ,CAAC;EACL,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,EAAE;CAClB",
+    "mappings": "",
     "sources": [
         "productDetails.scss"
     ],
