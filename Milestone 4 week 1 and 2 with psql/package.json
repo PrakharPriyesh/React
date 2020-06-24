@@ -1,0 +1,43 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "Warmup excercise one",
+  "main": "server.js",
+  "scripts": {
+    
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon --exec babel-node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "login",
+    "auth",
+    "koa",
+    "react.",
+    "postgress"
+  ],
+  "author": "prakharpriyesh",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-passport": "^4.1.3",
+    "koa-router": "^9.0.1",
+    "passport-jwt": "^4.0.0",
+    "pg-promise": "^10.5.7",
+    "validator": "^13.1.1"
+  }
+}

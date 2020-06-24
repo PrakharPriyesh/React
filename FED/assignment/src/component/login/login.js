@@ -11,21 +11,26 @@ const Login = () => {
         const userName = document.getElementById('login-username').value
         const userPass = document.getElementById('login-password').value
         const check = document.getElementById('login-checkbox').checked
-        if (userName === 'a' || userName === "b") {
+        if (userName === 'abc' || userName === "xyz") {
             if (check) {
-                if (userPass === "b") {
+                if (userPass === "123") {
                     localStorage.setItem("username", userName);
                     localStorage.setItem("userpass", userPass);
                     changeLoginState(!loginState)
                 }
             }
             else {
-                if (userName === 'a' || userName === "b") {
-                    sessionStorage.setItem("username", userName);
-                    sessionStorage.setItem("userpass", userPass);
-                    changeLoginState(!loginState)
+                if (userName === 'abc' || userName === "xyz") {
+                    if (userPass === "123") {
+                        sessionStorage.setItem("username", userName);
+                        sessionStorage.setItem("userpass", userPass);
+                        changeLoginState(!loginState)
+                    }
                 }
             }
+        }
+        else {
+            alert('Wrong Username or Password')
         }
     }
 
