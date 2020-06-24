@@ -22,7 +22,7 @@ function App() {
           <Switch>
             <PrivateRoute exact path="/updateProduct" component={UpdateProduct} />
           </Switch>
-
+          <Route exact path="/register" component={Register} />
         </div>
       </Router>
     </Provider>
