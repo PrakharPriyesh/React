@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 class PrivateRoute extends Component {
     render() {
         console.log(this.props.auth.isAuthenticated, "Pro")
-        return this.props.auth.isAuthenticated ? <this.props.component /> : <Redirect to="/login" />
+        return (this.props.auth.isAuthenticated ? <this.props.component /> : <Redirect to="/login" />)
     }
 }
 
@@ -17,21 +17,6 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(PrivateRoute);
-
-
-
-// const PrivateRoute = ({ component: Component, auth, ...rest }) => (
-//     <Route
-//         {...rest}
-//         render={props =>
-//             auth.isAuthenticated === true ? (
-//                 <Component {...props} />
-//             ) : (
-//                     <Redirect to="/login" />
-//                 )
-//         }
-//     />
-// );
 
 
 
