@@ -20,9 +20,9 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Switch>
-            <PrivateRoute exact path="/updateProduct" component={UpdateProduct} />
+            <PrivateRoute exact path="/product" component={UpdateProduct} />
           </Switch>
-          <Route exact path="/register" component={Register} />
+          <Route exact path="/updateProduct" component={UpdateProduct} />
         </div>
       </Router>
     </Provider>

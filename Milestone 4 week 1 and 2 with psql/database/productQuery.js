@@ -16,10 +16,11 @@ function getAllProducts() {
 function updateProduct(ctx) {
     return new Promise(function (resolve, reject) {
         let { name, amount, description, pid } = ctx.request.body;
-        console.log(ctx.request.body);
+        console.log(ctx.request.body);  
         db.any('update products set name = $1, amount = $2, description = $3 where pid = $4', [name, amount, description, pid])
             .then(data => {
-                resolve(data);
+                console.log(data)
+                resolve("Success");
             })
             .catch(error => {
                 console.log('ERROR:', error);

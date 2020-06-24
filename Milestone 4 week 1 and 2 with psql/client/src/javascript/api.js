@@ -3,12 +3,15 @@ import axios from 'axios';
 
 
 export const updateProductDetails = (data) => {
-    axios
-        .post("/updateProduct", data)
-        .then(res => {
-            console.log("Response product", res)
-        })
-        .catch(err => {
-            console.log(err)
-        })
+    return new Promise((resolve, reject) => {
+        axios
+            .post("/updateProduct", data)
+            .then(res => {
+                resolve(res.data);
+            })
+            .catch(err => {
+                console.log(err);
+                reject("Unable to fetch data");
+            })
+    })
 }
