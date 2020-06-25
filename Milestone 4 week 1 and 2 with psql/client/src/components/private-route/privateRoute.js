@@ -7,7 +7,6 @@ import React, { Component } from 'react';
 
 class PrivateRoute extends Component {
     render() {
-        console.log(this.props.auth.isAuthenticated, "Pro")
         return (this.props.auth.isAuthenticated ? <this.props.component /> : <Redirect to="/login" />)
     }
 }
