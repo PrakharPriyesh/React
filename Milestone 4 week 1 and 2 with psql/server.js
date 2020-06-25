@@ -1,7 +1,8 @@
 import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
 import jwt from 'koa-jwt';
-import router from './api/router';
+import publicRoute from './routes/public/publicRoute';
+import privateRoute from './routes/private/privateRoute';
 
 // For reference
 const secret = 'This is my key'
@@ -9,6 +10,8 @@ const secret = 'This is my key'
 const app = new Koa();
 
 app.use(bodyParser());
+
+app.use(publicRoute.routes());
 
 app.use(async function (ctx, next) {
     return next().catch((err) => {
@@ -29,8 +32,7 @@ app.use(async function (ctx, next) {
 
 app.use(jwt({ secret: secret }));
 
-app.use(router.routes());
-
+app.use(privateRoute.routes());
 
 const port = 5000;
 
