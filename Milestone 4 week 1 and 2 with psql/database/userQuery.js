@@ -20,8 +20,9 @@ function getAllUsers(ctx) {
 
 function loginUser(ctx) {
     return new Promise(function (resolve, reject) {
-        console.log("Request",ctx.request)
+        console.log("Request", ctx.request)
         let { errors, isValid } = validateLoginInput(ctx.request.body);
+
         if (!isValid) {
             reject(errors);
         }
@@ -30,7 +31,6 @@ function loginUser(ctx) {
         db.any('select * from users where email=$1', [email])
             .then(data => {
                 if (data[0] !== undefined) {
-
                     bcrypt.compare(password, data[0].password).then((isMatch) => {
                         if (isMatch) {
                             const payload = {
@@ -43,19 +43,22 @@ function loginUser(ctx) {
                                     expiresIn: 31556926 // 1 year in seconds
                                 },
                                 (err, token) => {
-                                    resolve({
-                                        success: true,
-                                        token: "Bearer " + token
-                                    });
+                                    db.any('update users set jwt = $1 where email=$2', [token, email])
+                                        .then(data => {
+                                            resolve({
+                                                success: true,
+                                                token: "Bearer " + token
+                                            });
+                                        })
+                                        .catch(err => {
+                                            reject("Unable to save jwt");
+                                        })
                                 }
                             );
                         } else {
                             reject("Password Mismatch");
                         }
-
-                    }); 
-
-                    //resolve(data[0].email.toString());
+                    });
 
                 } else {
                     reject("User Not Found")
