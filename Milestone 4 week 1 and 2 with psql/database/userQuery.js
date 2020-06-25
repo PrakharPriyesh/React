@@ -47,7 +47,7 @@ function loginUser(ctx) {
                                         .then(data => {
                                             resolve({
                                                 success: true,
-                                                token: "Bearer " + token
+                                                token: 'Bearer '+ token
                                             });
                                         })
                                         .catch(err => {
